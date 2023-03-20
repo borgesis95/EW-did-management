@@ -1,28 +1,35 @@
-import express, { Express, Request, Response } from 'express';
-import dotenv from 'dotenv';
-import { initWithPrivateKeySigner } from 'iam-client-lib';
+import express from "express";
+import * as bodyParser from "body-parser";
 
-dotenv.config();
- 
-const key = process.env.PRIVATE_KEY || '';
-const rpc = process.env.RPC_URL || ''
+class App {
+  public app: express.Application;
+  public port: number;
 
+  constructor(controllers: unknown, port: number) {
+    this.app = express();
+    this.port = port;
 
-const myFunc  = async () => {
-  const { signerService, messagingService, connectToCacheServer } = await initWithPrivateKeySigner(key, rpc);
-  console.log("SIGNER ",signerService);
+    this.initializeMiddlewares();
+    this.initializeControllers(controllers);
+  }
+
+  private initializeMiddlewares() {
+    /* Da inizializzare il logger */
+    // this.app.use(logger);
+    this.app.use(bodyParser.json());
+  }
+
+  private initializeControllers(controllers: any) {
+    controllers.forEach((controller: any) => {
+      this.app.use("/", controller.router);
+    });
+  }
+
+  public listen() {
+    this.app.listen(this.port, () => {
+      console.log(`🚀 App ready at port: ${this.port}`);
+    });
+  }
 }
 
-myFunc();
-
-
-const app: Express = express();
-const port = process.env.PORT;
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('Express + TypeScript Server');
-});
-
-app.listen(port, () => {
-  console.log(`⚡️[server]: Server sis running at http://localhost:${port}`);
-});
+export default App;
