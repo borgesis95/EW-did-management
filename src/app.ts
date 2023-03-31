@@ -1,5 +1,6 @@
 import express from "express";
 import * as bodyParser from "body-parser";
+import { connect } from "mongoose";
 
 class App {
   public app: express.Application;
@@ -9,7 +10,9 @@ class App {
     this.app = express();
     this.port = port;
 
+    this.setupCors();
     this.initializeMiddlewares();
+    this.connectToTheDatabase();
     this.initializeControllers(controllers);
   }
 
@@ -19,11 +22,53 @@ class App {
     this.app.use(bodyParser.json());
   }
 
+  /**
+   * @description
+   * Connection with mongo's database
+   */
+  private connectToTheDatabase() {
+    const {
+      MONGO_USER,
+      MONGO_PASSWORD,
+      MONGO_DBNAME,
+      MONGO_URL = "",
+    } = process.env;
+
+    console.log("connecting to database...");
+    console.log("process.env", MONGO_URL);
+    connect(MONGO_URL);
+  }
+
   private initializeControllers(controllers: any) {
     controllers.forEach((controller: any) => {
       this.app.use("/", controller.router);
     });
   }
+
+  private setupCors = () => {
+    this.app.use((req, res, next) => {
+      // Website you wish to allow to connect
+      res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+
+      // Request methods you wish to allow
+      res.setHeader(
+        "Access-Control-Allow-Methods",
+        "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+      );
+
+      // Request headers you wish to allow
+      res.setHeader(
+        "Access-Control-Allow-Headers",
+        "X-Requested-With,content-type"
+      );
+
+      // Set to true if you need the website to include cookies in the requests sent
+      // to the API (e.g. in case you use sessions)
+
+      // Pass to next layer of middleware
+      next();
+    });
+  };
 
   public listen() {
     this.app.listen(this.port, () => {
