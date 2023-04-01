@@ -1,7 +1,9 @@
 import * as express from "express";
-import userModel from "../models/user.model";
+import userModel, { User } from "../models/user.model";
 import crypto from "crypto";
 import { recoverPersonalSignature } from "@metamask/eth-sig-util";
+import HttpException from "../exceptions/HttpException";
+import APIresponse from "../response/response";
 
 export default class UserController {
   public path = "/user";
@@ -16,6 +18,7 @@ export default class UserController {
   private defineRoutes() {
     this.router.get(`${this.path}/:address`, this.checkUser);
     this.router.post(`${this.path}/auth`, this.authenticate);
+    this.router.post(`${this.path}/create/:address`, this.createUser);
   }
 
   private checkUser = async (
@@ -31,18 +34,13 @@ export default class UserController {
 
     /**This means that user is not available on database and need to be created */
     if (!user) {
-      nonce = crypto.randomBytes(16).toString("base64");
-      await this.user.create({
-        address: accountAddress,
-        nonce: nonce,
-      });
+      next(new HttpException(400, "User not found"));
     } else {
       nonce = user.nonce;
+      response.send({
+        nonce: nonce,
+      });
     }
-
-    response.send({
-      nonce: nonce,
-    });
   };
 
   private authenticate = async (
@@ -56,16 +54,38 @@ export default class UserController {
       address: body.address,
     });
 
+    // If user is already available then check if address is correct
     if (user) {
       const msg = `nonce_${user.nonce}`;
-      const msgBufferHex = bufferToHex(Buffer.from(msg, "utf8"));
+      // const msgBufferHex = bufferToHex(Buffer.from(msg, "utf8"));
       const address = recoverPersonalSignature({
-        data: msgBufferHex,
+        data: msg,
         signature: body.msg,
       });
-
-      // TODO: Inserire controlli sull utente
     }
-    response.send("risposta");
+    // create and send JWT token
+
+    // TODO: Inserire controlli sull utente
+
+    response.send();
+  };
+
+  private createUser = async (
+    request: express.Request,
+    response: express.Response,
+    next: express.NextFunction
+  ) => {
+    const public_address = request.params.address;
+
+    const user_request: User = request.body;
+
+    if (public_address) {
+      const nonce = crypto.randomBytes(16).toString("base64");
+      user_request.nonce = nonce;
+      user_request.address = public_address;
+      await this.user.create(user_request);
+
+      response.send(APIresponse.success("User has been created"));
+    }
   };
 }

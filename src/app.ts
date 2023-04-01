@@ -1,7 +1,7 @@
 import express from "express";
 import * as bodyParser from "body-parser";
 import { connect } from "mongoose";
-
+import errorsHandler from "./middleware/error";
 class App {
   public app: express.Application;
   public port: number;
@@ -14,6 +14,7 @@ class App {
     this.initializeMiddlewares();
     this.connectToTheDatabase();
     this.initializeControllers(controllers);
+    this.errorHandler();
   }
 
   private initializeMiddlewares() {
@@ -21,6 +22,10 @@ class App {
     // this.app.use(logger);
     this.app.use(bodyParser.json());
   }
+
+  private errorHandler = () => {
+    this.app.use(errorsHandler);
+  };
 
   /**
    * @description
@@ -34,8 +39,6 @@ class App {
       MONGO_URL = "",
     } = process.env;
 
-    console.log("connecting to database...");
-    console.log("process.env", MONGO_URL);
     connect(MONGO_URL);
   }
 
