@@ -18,6 +18,7 @@ export default class AssetsController {
     this.router.post(`${this.path}/create`, this.createAssets);
     this.router.get(`${this.path}`, this.getAssets);
     this.router.post(`${this.path}/new`, auth, this.newAssets);
+    this.router.get(`${this.path}/list`, auth, this.retrieveAssets);
   }
 
   /**
@@ -55,12 +56,20 @@ export default class AssetsController {
     request: express.Request,
     response: express.Response
   ) => {
-    console.log("request.body", request.body);
     const address = response.locals.user;
     const res = await userModel.findOneAndUpdate(
       { address: address },
       { $push: { assets: request.body } }
     );
-    response.send(APIresponse.success("Assets has been create"));
+    response.send(APIresponse.success("Assets has been created"));
+  };
+
+  private retrieveAssets = async (
+    request: express.Request,
+    response: express.Response
+  ) => {
+    const address = response.locals.user;
+    const res = await userModel.find({ address: address });
+    response.send(APIresponse.success(res[0].assets));
   };
 }
