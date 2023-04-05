@@ -4,6 +4,7 @@ import crypto from "crypto";
 import { recoverPersonalSignature } from "@metamask/eth-sig-util";
 import HttpException from "../exceptions/HttpException";
 import APIresponse from "../response/response";
+import { createToken } from "../utils/jwt";
 
 export default class UserController {
   public path = "/user";
@@ -49,7 +50,7 @@ export default class UserController {
     next: express.NextFunction
   ) => {
     const body = request.body;
-
+    let token = "";
     const user = await this.user.findOne({
       address: body.address,
     });
@@ -62,12 +63,13 @@ export default class UserController {
         data: msg,
         signature: body.msg,
       });
+
+      if (address == body.address) {
+        token = createToken(address);
+      }
     }
-    // create and send JWT token
 
-    // TODO: Inserire controlli sull utente
-
-    response.send();
+    response.send(APIresponse.success(token));
   };
 
   private createUser = async (

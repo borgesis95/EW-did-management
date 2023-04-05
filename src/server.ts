@@ -44,13 +44,7 @@ dotenv.config();
 
 const port = parseInt(process.env.PORT || "3000");
 
-const app = new App(
-  [
-    // new AssetsController(assetsService),
-    new UserController(),
-  ],
-  port
-);
+const app = new App([new AssetsController(), new UserController()], port);
 
 app.listen();
 // };
