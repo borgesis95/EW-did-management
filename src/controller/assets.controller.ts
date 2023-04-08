@@ -70,6 +70,7 @@ export default class AssetsController {
   ) => {
     const address = response.locals.user;
     const res = await userModel.find({ address: address });
-    response.send(APIresponse.success(res[0].assets));
+
+    response.send(APIresponse.success(res[0]?.assets));
   };
 }

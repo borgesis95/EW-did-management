@@ -14,7 +14,8 @@ export const auth = (
       const removedBearerToken = token.split(" ")[1];
       const secret = process.env.JWTSECRET || "";
       const decoded_token = jwt.verify(removedBearerToken, secret) as any;
-      response.locals.user = decoded_token.email as any;
+
+      response.locals.user = decoded_token.address as any;
       next();
     }
   } catch (error: any) {

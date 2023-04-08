@@ -5,12 +5,16 @@ import { recoverPersonalSignature } from "@metamask/eth-sig-util";
 import HttpException from "../exceptions/HttpException";
 import APIresponse from "../response/response";
 import { createToken } from "../utils/jwt";
+import { energyModel } from "../models/energy.model";
+import { format } from "date-fns";
+import { auth } from "../middleware/auth";
 
 export default class UserController {
   public path = "/user";
   public router = express.Router();
 
   private user = userModel;
+  private energy = energyModel;
 
   constructor() {
     this.defineRoutes();
@@ -20,6 +24,16 @@ export default class UserController {
     this.router.get(`${this.path}/:address`, this.checkUser);
     this.router.post(`${this.path}/auth`, this.authenticate);
     this.router.post(`${this.path}/create/:address`, this.createUser);
+    this.router.get(
+      `${this.path}/energy/list`,
+      auth,
+      this.retrieveEnergiesData
+    );
+    this.router.get(
+      `${this.path}/energy/all`,
+      auth,
+      this.retrieveTotalEnergyData
+    );
   }
 
   private checkUser = async (
@@ -32,6 +46,8 @@ export default class UserController {
     const user = await this.user.findOne({
       address: accountAddress,
     });
+
+    console.log("USER", user);
 
     /**This means that user is not available on database and need to be created */
     if (!user) {
@@ -65,7 +81,8 @@ export default class UserController {
       });
 
       if (address == body.address) {
-        token = createToken(address);
+        //@ts-ignore
+        token = createToken(address, user.username);
       }
     }
 
@@ -89,5 +106,65 @@ export default class UserController {
 
       response.send(APIresponse.success("User has been created"));
     }
+  };
+
+  private retrieveEnergiesData = async (
+    request: express.Request,
+    response: express.Response,
+    next: express.NextFunction
+  ) => {
+    const address = response.locals.user;
+
+    const res = await energyModel.find({
+      user_id: address,
+    });
+
+    const mapRes = res.map((item) => {
+      return {
+        produced: item.produced,
+        consumed: item.consumed,
+        date: format(new Date(item.date), "dd/LL/yyyy HH:mm"),
+      };
+    });
+    response.send(APIresponse.success(mapRes));
+  };
+
+  private retrieveTotalEnergyData = async (
+    request: express.Request,
+    response: express.Response,
+    next: express.NextFunction
+  ) => {
+    const address = response.locals.user;
+    const res = await energyModel.aggregate([
+      {
+        $match: {
+          user_id: address,
+        },
+      },
+      {
+        $group: {
+          _id: "$user_id",
+          totally_produced: {
+            $sum: "$produced",
+          },
+          totally_consumed: {
+            $sum: "$consumed",
+          },
+        },
+      },
+    ]);
+
+    const result = [
+      {
+        name: "Produced (KW)",
+        value: res[0]?.totally_produced,
+      },
+      {
+        name: "Consumed (KW)",
+        value: res[0]?.totally_consumed,
+      },
+    ];
+
+    response.send(APIresponse.success(result));
   };
 }

@@ -2,13 +2,19 @@ import express from "express";
 import * as bodyParser from "body-parser";
 import { connect } from "mongoose";
 import errorsHandler from "./middleware/error";
+import schedule from "node-schedule";
+import SmartMeterService from "./services/smart-meter.service";
+
 class App {
   public app: express.Application;
   public port: number;
+  public smartMeter: SmartMeterService;
 
   constructor(controllers: unknown, port: number) {
     this.app = express();
     this.port = port;
+    /* Run every 15 minutes*/
+    this.smartMeter = new SmartMeterService("*/15 * * * *");
 
     this.setupCors();
     this.initializeMiddlewares();
@@ -71,6 +77,7 @@ class App {
   };
 
   public listen() {
+    this.smartMeter.run();
     this.app.listen(this.port, () => {
       console.log(`🚀 App ready at port: ${this.port}`);
     });
