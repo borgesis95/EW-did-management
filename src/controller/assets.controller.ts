@@ -3,15 +3,21 @@ import { AssetsService } from "iam-client-lib";
 import { auth } from "../middleware/auth";
 import userModel from "../models/user.model";
 import APIresponse from "../response/response";
+import ContractService from "../services/contract.service";
 export default class AssetsController {
   public path = "/assets";
   public router = express.Router();
   private assetService?: AssetsService;
   private user = userModel;
 
+  //TODO: Need to be delete from here
+  private scService: ContractService;
+
   constructor(assetService?: AssetsService) {
     this.defineRoutes();
+
     this.assetService = assetService;
+    this.scService = new ContractService();
   }
 
   private defineRoutes() {
@@ -19,6 +25,7 @@ export default class AssetsController {
     this.router.get(`${this.path}`, this.getAssets);
     this.router.post(`${this.path}/new`, auth, this.newAssets);
     this.router.get(`${this.path}/list`, auth, this.retrieveAssets);
+    this.router.get(`${this.path}/contract/list`, this.retrieveOffers);
   }
 
   /**
@@ -72,5 +79,14 @@ export default class AssetsController {
     const res = await userModel.find({ address: address });
 
     response.send(APIresponse.success(res[0]?.assets));
+  };
+
+  private retrieveOffers = async (
+    request: express.Request,
+    response: express.Response
+  ) => {
+    const res = await this.scService.getAllOffers();
+    console.log("res", res);
+    response.send(APIresponse.success(res));
   };
 }

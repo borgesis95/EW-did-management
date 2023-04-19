@@ -13,13 +13,12 @@ export default class SmartMeterService {
 
   public run() {
     schedule.scheduleJob(this.scheduleTime, () => {
-      console.log("The answer to life, the universe, and everything!");
       this.retrieveUsersAndPush();
     });
   }
 
   /**For each user create new istance of simulated smart meter and push into DBb*/
-  private retrieveUsersAndPush = async () => {
+  public retrieveUsersAndPush = async () => {
     const users = await this.user.find();
     const reading_date = new Date();
 
@@ -38,6 +37,7 @@ export default class SmartMeterService {
     });
 
     await this.energyModel.insertMany(result);
+    return result;
   };
 
   private generateValues = () => {

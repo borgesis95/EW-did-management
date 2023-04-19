@@ -47,8 +47,6 @@ export default class UserController {
       address: accountAddress,
     });
 
-    console.log("USER", user);
-
     /**This means that user is not available on database and need to be created */
     if (!user) {
       next(new HttpException(400, "User not found"));

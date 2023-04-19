@@ -11,6 +11,12 @@ contract MicroGridContract {
         uint256 quantityEnergy;
     }
 
+    struct Offer {
+        address user;
+        uint256 price;
+        uint date;
+    }
+
     struct EnergyRequest {
         address sender;
         uint256 price;
@@ -18,8 +24,15 @@ contract MicroGridContract {
     }
 
     mapping(address => EnergyOffer) public eWOffersList;
+
+    // Mapped betweeen address and offer
+    mapping(address => Offer) public offers;
+
+    mapping(address => uint) public tests;
+
     EnergyOffer[] public listOffers;
     EnergyRequest[] public listRequest;
+    Offer[] public offersList;
 
     /**
      * Events
@@ -60,5 +73,32 @@ contract MicroGridContract {
 
     function getOffers() public view returns (EnergyOffer[] memory) {
         return listOffers;
+    }
+
+    /**NEW  */
+    function createOffer(address _address, uint price, uint date) external {
+        Offer memory newOffer = Offer(_address, price, date);
+        offers[_address] = newOffer;
+
+        // Create a list of all
+        offersList.push(Offer(_address, price, date));
+    }
+
+    function createTest(uint price) external {
+        tests[msg.sender] = price;
+    }
+
+    function getTestById() public view returns (uint) {
+        return tests[msg.sender];
+    }
+
+    function getOffersByUserAddress(
+        address _address
+    ) public view returns (Offer memory) {
+        return offers[_address];
+    }
+
+    function getAllOffers() public view returns (Offer[] memory) {
+        return offersList;
     }
 }
