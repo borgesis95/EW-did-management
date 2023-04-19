@@ -1,6 +1,11 @@
 import schedule from "node-schedule";
 import userModel from "../models/user.model";
 import { EnergyData, energyModel } from "../models/energy.model";
+import {
+  LOWER_BOUND_ENERGY,
+  UPPER_BOUND_ENERGY,
+  solarCurveValues,
+} from "../utils/meters-hour";
 
 export default class SmartMeterService {
   private scheduleTime: string;
@@ -18,7 +23,7 @@ export default class SmartMeterService {
   }
 
   /**For each user create new istance of simulated smart meter and push into DBb*/
-  public retrieveUsersAndPush = async () => {
+  public retrieveUsersAndPush = async (isTest = false) => {
     const users = await this.user.find();
     const reading_date = new Date();
 
@@ -36,13 +41,37 @@ export default class SmartMeterService {
       result.push(value);
     });
 
-    await this.energyModel.insertMany(result);
+    !isTest ?? (await this.energyModel.insertMany(result));
     return result;
   };
 
+  /**
+   * Goal of this function is create an accurate simulation of energy produced according the day's hour
+   */
+  public solarEnergyCurve = () => {
+    const hour = new Date().getHours();
+    let min = 0;
+    let max = 0;
+    solarCurveValues.every((item) => {
+      if (hour >= item.from && hour < item.to) {
+        min = item.min;
+        max = item.max;
+        return false;
+      }
+
+      return true;
+    });
+
+    return { min, max };
+  };
+
   private generateValues = () => {
-    const produced = this.generateRandomInteger(0, 100);
-    const consumed = this.generateRandomInteger(0, 100);
+    const { min, max } = this.solarEnergyCurve();
+    const produced = this.generateRandomInteger(min, max);
+    const consumed = this.generateRandomInteger(
+      LOWER_BOUND_ENERGY,
+      UPPER_BOUND_ENERGY
+    );
 
     return {
       produced,

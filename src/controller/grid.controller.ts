@@ -58,6 +58,10 @@ export default class GridController {
   private defineRoutes() {
     this.router.get(`${this.path}/matching`, this.matchingAlgorithm);
     this.router.get(`${this.path}/list`, this.getMatch);
+    this.router.get(
+      `${this.path}/meter-simulation/:hours`,
+      this.getSmartMetersSimulation
+    );
   }
 
   private matchingAlgorithm = async (
@@ -229,7 +233,16 @@ export default class GridController {
     next: express.NextFunction
   ) => {
     const match = await this.contractService.getMatch();
-    console.log("match:", match);
     res.send(match);
+  };
+
+  /**This route is useful just for test situation and need to be deleted */
+  private getSmartMetersSimulation = async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) => {
+    const response = this.smartMeterService.solarEnergyCurve();
+    res.send(response);
   };
 }
