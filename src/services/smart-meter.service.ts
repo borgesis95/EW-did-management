@@ -28,6 +28,7 @@ export default class SmartMeterService {
     const reading_date = new Date();
 
     const result: EnergyData[] = [];
+
     users.map((user) => {
       const res = this.generateValues();
 
@@ -41,7 +42,7 @@ export default class SmartMeterService {
       result.push(value);
     });
 
-    !isTest ?? (await this.energyModel.insertMany(result));
+    isTest == false ? await this.energyModel.insertMany(result) : null;
     return result;
   };
 
@@ -69,7 +70,7 @@ export default class SmartMeterService {
     const { min, max } = this.solarEnergyCurve();
     const produced = this.generateRandomInteger(min, max);
     const consumed = this.generateRandomInteger(
-      LOWER_BOUND_ENERGY,
+      LOWER_BOUND_ENERGY + 200,
       UPPER_BOUND_ENERGY
     );
 

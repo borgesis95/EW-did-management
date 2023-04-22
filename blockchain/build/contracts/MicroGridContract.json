@@ -2284,7 +2284,7 @@
                 }
               ]
             },
-            "name": "array_length_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr",
+            "name": "array_length_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2370,7 +2370,7 @@
                 }
               ]
             },
-            "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2453,7 +2453,7 @@
                 }
               ]
             },
-            "name": "array_dataslot_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr",
+            "name": "array_dataslot_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3112,7 +3112,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr",
+            "name": "abi_encode_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3150,7 +3150,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr",
+                      "name": "abi_encode_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "5564:89:6"
                     },
@@ -3196,7 +3196,7 @@
                 }
               ]
             },
-            "name": "abi_encodeUpdatedPos_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr",
+            "name": "abi_encodeUpdatedPos_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3263,7 +3263,7 @@
                 }
               ]
             },
-            "name": "array_nextElement_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr",
+            "name": "array_nextElement_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3300,7 +3300,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_length_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_length_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "6154:75:6"
                     },
@@ -3333,7 +3333,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "6252:101:6"
                     },
@@ -3360,7 +3360,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_dataslot_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_dataslot_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "6390:77:6"
                     },
@@ -3443,7 +3443,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "abi_encodeUpdatedPos_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr",
+                            "name": "abi_encodeUpdatedPos_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "6641:99:6"
                           },
@@ -3470,7 +3470,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "array_nextElement_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr",
+                            "name": "array_nextElement_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "6783:80:6"
                           },
@@ -3594,7 +3594,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "abi_encode_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3735,7 +3735,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "abi_encode_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "7226:149:6"
                     },
@@ -3752,7 +3752,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4632,7 +4632,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr_fromStack",
+            "name": "abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4722,7 +4722,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr_fromStack",
+                      "name": "abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "9388:87:6"
                     },
@@ -4734,7 +4734,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_struct$_Offer_$225_memory_ptr__to_t_struct$_Offer_$225_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_struct$_Offer_$294_memory_ptr__to_t_struct$_Offer_$294_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4794,7 +4794,7 @@
                 }
               ]
             },
-            "name": "array_length_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr",
+            "name": "array_length_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4880,7 +4880,7 @@
                 }
               ]
             },
-            "name": "array_storeLengthForEncoding_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "array_storeLengthForEncoding_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4963,7 +4963,7 @@
                 }
               ]
             },
-            "name": "array_dataslot_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr",
+            "name": "array_dataslot_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5310,7 +5310,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr",
+            "name": "abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5348,7 +5348,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr",
+                      "name": "abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "10908:77:6"
                     },
@@ -5394,7 +5394,7 @@
                 }
               ]
             },
-            "name": "abi_encodeUpdatedPos_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr",
+            "name": "abi_encodeUpdatedPos_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5461,7 +5461,7 @@
                 }
               ]
             },
-            "name": "array_nextElement_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr",
+            "name": "array_nextElement_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5498,7 +5498,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_length_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_length_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "11456:69:6"
                     },
@@ -5531,7 +5531,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "11548:95:6"
                     },
@@ -5558,7 +5558,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_dataslot_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_dataslot_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "11680:71:6"
                     },
@@ -5641,7 +5641,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "abi_encodeUpdatedPos_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr",
+                            "name": "abi_encodeUpdatedPos_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "11925:87:6"
                           },
@@ -5668,7 +5668,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "array_nextElement_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr",
+                            "name": "array_nextElement_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "12055:74:6"
                           },
@@ -5792,7 +5792,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "abi_encode_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5933,7 +5933,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "abi_encode_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "12480:137:6"
                     },
@@ -5950,7 +5950,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6495,7 +6495,7 @@
                 }
               ]
             },
-            "name": "array_length_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+            "name": "array_length_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6581,7 +6581,7 @@
                 }
               ]
             },
-            "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6664,7 +6664,7 @@
                 }
               ]
             },
-            "name": "array_dataslot_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+            "name": "array_dataslot_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7011,7 +7011,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr",
+            "name": "abi_encode_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7049,7 +7049,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr",
+                      "name": "abi_encode_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "15038:93:6"
                     },
@@ -7095,7 +7095,7 @@
                 }
               ]
             },
-            "name": "abi_encodeUpdatedPos_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr",
+            "name": "abi_encodeUpdatedPos_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7162,7 +7162,7 @@
                 }
               ]
             },
-            "name": "array_nextElement_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+            "name": "array_nextElement_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7199,7 +7199,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_length_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_length_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "15642:77:6"
                     },
@@ -7232,7 +7232,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "15742:103:6"
                     },
@@ -7259,7 +7259,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_dataslot_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_dataslot_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "15882:79:6"
                     },
@@ -7342,7 +7342,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "abi_encodeUpdatedPos_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr",
+                            "name": "abi_encodeUpdatedPos_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "16135:103:6"
                           },
@@ -7369,7 +7369,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "array_nextElement_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+                            "name": "array_nextElement_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "16281:82:6"
                           },
@@ -7493,7 +7493,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "abi_encode_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7634,7 +7634,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "abi_encode_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "16730:153:6"
                     },
@@ -7651,7 +7651,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -8425,7 +8425,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address_t_uint256_t_uint256__to_t_address_t_uint256_t_uint256__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n    }\n\n    function abi_encode_tuple_t_address_t_uint256_t_uint256_t_uint256_t_uint256__to_t_address_t_uint256_t_uint256_t_uint256_t_uint256__fromStack_reversed(headStart , value4, value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 160)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value3,  add(headStart, 96))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value4,  add(headStart, 128))\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_tuple_t_addresst_uint256t_uint256(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    // struct MicroGridContract.EnergyOffer -> struct MicroGridContract.EnergyOffer\n    function abi_encode_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr(value, pos)  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // asset\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // startDate\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // endDate\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // quantityEnergy\n\n            let memberValue0 := mload(add(value, 0x80))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x80))\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr(value0, pos) -> updatedPos {\n        abi_encode_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr(value0, pos)\n        updatedPos := add(pos, 0xa0)\n    }\n\n    function array_nextElement_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MicroGridContract.EnergyOffer[] -> struct MicroGridContract.EnergyOffer[]\n    function abi_encode_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_struct$_EnergyOffer_$218_memory_ptr_to_t_struct$_EnergyOffer_$218_memory_ptr(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_decode_tuple_t_uint256t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    // struct MicroGridContract.Offer -> struct MicroGridContract.Offer\n    function abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr_fromStack(value, pos)  {\n        let tail := add(pos, 0x60)\n\n        {\n            // user\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // date\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n    }\n\n    function abi_encode_tuple_t_struct$_Offer_$225_memory_ptr__to_t_struct$_Offer_$225_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function array_length_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    // struct MicroGridContract.Offer -> struct MicroGridContract.Offer\n    function abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr(value, pos)  {\n        let tail := add(pos, 0x60)\n\n        {\n            // user\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // date\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr(value0, pos) -> updatedPos {\n        abi_encode_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr(value0, pos)\n        updatedPos := add(pos, 0x60)\n    }\n\n    function array_nextElement_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MicroGridContract.Offer[] -> struct MicroGridContract.Offer[]\n    function abi_encode_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_struct$_Offer_$225_memory_ptr_to_t_struct$_Offer_$225_memory_ptr(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_decode_tuple_t_addresst_uint256t_uint256t_uint256t_uint256(headStart, dataEnd) -> value0, value1, value2, value3, value4 {\n        if slt(sub(dataEnd, headStart), 160) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 96\n\n            value3 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 128\n\n            value4 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    // struct MicroGridContract.EnergyRequest -> struct MicroGridContract.EnergyRequest\n    function abi_encode_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr(value, pos)  {\n        let tail := add(pos, 0x60)\n\n        {\n            // sender\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // quantityEnergy\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr(value0, pos) -> updatedPos {\n        abi_encode_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr(value0, pos)\n        updatedPos := add(pos, 0x60)\n    }\n\n    function array_nextElement_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MicroGridContract.EnergyRequest[] -> struct MicroGridContract.EnergyRequest[]\n    function abi_encode_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_struct$_EnergyRequest_$232_memory_ptr_to_t_struct$_EnergyRequest_$232_memory_ptr(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function store_literal_in_memory_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d(memPtr) {\n\n        mstore(add(memPtr, 0), \"Request has been created\")\n\n    }\n\n    function abi_encode_t_stringliteral_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 24)\n        store_literal_in_memory_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474(memPtr) {\n\n        mstore(add(memPtr, 0), \"Offer has been created\")\n\n    }\n\n    function abi_encode_t_stringliteral_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 22)\n        store_literal_in_memory_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n}\n",
+      "contents": "{\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address_t_uint256_t_uint256__to_t_address_t_uint256_t_uint256__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n    }\n\n    function abi_encode_tuple_t_address_t_uint256_t_uint256_t_uint256_t_uint256__to_t_address_t_uint256_t_uint256_t_uint256_t_uint256__fromStack_reversed(headStart , value4, value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 160)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value3,  add(headStart, 96))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value4,  add(headStart, 128))\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_tuple_t_addresst_uint256t_uint256(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    // struct MicroGridContract.EnergyOffer -> struct MicroGridContract.EnergyOffer\n    function abi_encode_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr(value, pos)  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // asset\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // startDate\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // endDate\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // quantityEnergy\n\n            let memberValue0 := mload(add(value, 0x80))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x80))\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr(value0, pos) -> updatedPos {\n        abi_encode_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr(value0, pos)\n        updatedPos := add(pos, 0xa0)\n    }\n\n    function array_nextElement_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MicroGridContract.EnergyOffer[] -> struct MicroGridContract.EnergyOffer[]\n    function abi_encode_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_struct$_EnergyOffer_$287_memory_ptr_to_t_struct$_EnergyOffer_$287_memory_ptr(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_decode_tuple_t_uint256t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    // struct MicroGridContract.Offer -> struct MicroGridContract.Offer\n    function abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr_fromStack(value, pos)  {\n        let tail := add(pos, 0x60)\n\n        {\n            // user\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // date\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n    }\n\n    function abi_encode_tuple_t_struct$_Offer_$294_memory_ptr__to_t_struct$_Offer_$294_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function array_length_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    // struct MicroGridContract.Offer -> struct MicroGridContract.Offer\n    function abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr(value, pos)  {\n        let tail := add(pos, 0x60)\n\n        {\n            // user\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // date\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr(value0, pos) -> updatedPos {\n        abi_encode_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr(value0, pos)\n        updatedPos := add(pos, 0x60)\n    }\n\n    function array_nextElement_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MicroGridContract.Offer[] -> struct MicroGridContract.Offer[]\n    function abi_encode_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_struct$_Offer_$294_memory_ptr_to_t_struct$_Offer_$294_memory_ptr(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_decode_tuple_t_addresst_uint256t_uint256t_uint256t_uint256(headStart, dataEnd) -> value0, value1, value2, value3, value4 {\n        if slt(sub(dataEnd, headStart), 160) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 96\n\n            value3 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 128\n\n            value4 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    // struct MicroGridContract.EnergyRequest -> struct MicroGridContract.EnergyRequest\n    function abi_encode_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr(value, pos)  {\n        let tail := add(pos, 0x60)\n\n        {\n            // sender\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // price\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // quantityEnergy\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr(value0, pos) -> updatedPos {\n        abi_encode_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr(value0, pos)\n        updatedPos := add(pos, 0x60)\n    }\n\n    function array_nextElement_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct MicroGridContract.EnergyRequest[] -> struct MicroGridContract.EnergyRequest[]\n    function abi_encode_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_struct$_EnergyRequest_$301_memory_ptr_to_t_struct$_EnergyRequest_$301_memory_ptr(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function store_literal_in_memory_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d(memPtr) {\n\n        mstore(add(memPtr, 0), \"Request has been created\")\n\n    }\n\n    function abi_encode_t_stringliteral_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 24)\n        store_literal_in_memory_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_009dd7cbc8000eb7aa1740a361352c3ea5e5306f8be536d820f79c1b41f0009d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474(memPtr) {\n\n        mstore(add(memPtr, 0), \"Offer has been created\")\n\n    }\n\n    function abi_encode_t_stringliteral_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 22)\n        store_literal_in_memory_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0a928d72adbc66c150d18da51329152c57f86c66920d47727ef113c28079e474_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n}\n",
       "id": 6,
       "language": "Yul",
       "name": "#utility.yul"
@@ -8439,15 +8439,15 @@
     "absolutePath": "project:/contracts/MicroGrid.sol",
     "exportedSymbols": {
       "MicroGridContract": [
-        428
+        497
       ]
     },
-    "id": 429,
+    "id": 498,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 207,
+        "id": 276,
         "literals": [
           "solidity",
           "^",
@@ -8464,9 +8464,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 428,
+        "id": 497,
         "linearizedBaseContracts": [
-          428
+          497
         ],
         "name": "MicroGridContract",
         "nameLocation": "72:17:1",
@@ -8474,16 +8474,16 @@
         "nodes": [
           {
             "canonicalName": "MicroGridContract.EnergyOffer",
-            "id": 218,
+            "id": 287,
             "members": [
               {
                 "constant": false,
-                "id": 209,
+                "id": 278,
                 "mutability": "mutable",
                 "name": "asset",
                 "nameLocation": "135:5:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 218,
+                "scope": 287,
                 "src": "127:13:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8492,7 +8492,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 208,
+                  "id": 277,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "127:7:1",
@@ -8506,12 +8506,12 @@
               },
               {
                 "constant": false,
-                "id": 211,
+                "id": 280,
                 "mutability": "mutable",
                 "name": "price",
                 "nameLocation": "159:5:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 218,
+                "scope": 287,
                 "src": "151:13:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8520,7 +8520,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 210,
+                  "id": 279,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "151:7:1",
@@ -8533,12 +8533,12 @@
               },
               {
                 "constant": false,
-                "id": 213,
+                "id": 282,
                 "mutability": "mutable",
                 "name": "startDate",
                 "nameLocation": "180:9:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 218,
+                "scope": 287,
                 "src": "175:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8547,7 +8547,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 212,
+                  "id": 281,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "175:4:1",
@@ -8560,12 +8560,12 @@
               },
               {
                 "constant": false,
-                "id": 215,
+                "id": 284,
                 "mutability": "mutable",
                 "name": "endDate",
                 "nameLocation": "205:7:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 218,
+                "scope": 287,
                 "src": "200:12:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8574,7 +8574,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 214,
+                  "id": 283,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "200:4:1",
@@ -8587,12 +8587,12 @@
               },
               {
                 "constant": false,
-                "id": 217,
+                "id": 286,
                 "mutability": "mutable",
                 "name": "quantityEnergy",
                 "nameLocation": "231:14:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 218,
+                "scope": 287,
                 "src": "223:22:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8601,7 +8601,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 216,
+                  "id": 285,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "223:7:1",
@@ -8616,22 +8616,22 @@
             "name": "EnergyOffer",
             "nameLocation": "104:11:1",
             "nodeType": "StructDefinition",
-            "scope": 428,
+            "scope": 497,
             "src": "97:156:1",
             "visibility": "public"
           },
           {
             "canonicalName": "MicroGridContract.Offer",
-            "id": 225,
+            "id": 294,
             "members": [
               {
                 "constant": false,
-                "id": 220,
+                "id": 289,
                 "mutability": "mutable",
                 "name": "user",
                 "nameLocation": "293:4:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 225,
+                "scope": 294,
                 "src": "285:12:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8640,7 +8640,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 219,
+                  "id": 288,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "285:7:1",
@@ -8654,12 +8654,12 @@
               },
               {
                 "constant": false,
-                "id": 222,
+                "id": 291,
                 "mutability": "mutable",
                 "name": "price",
                 "nameLocation": "316:5:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 225,
+                "scope": 294,
                 "src": "308:13:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8668,7 +8668,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 221,
+                  "id": 290,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "308:7:1",
@@ -8681,12 +8681,12 @@
               },
               {
                 "constant": false,
-                "id": 224,
+                "id": 293,
                 "mutability": "mutable",
                 "name": "date",
                 "nameLocation": "337:4:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 225,
+                "scope": 294,
                 "src": "332:9:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8695,7 +8695,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 223,
+                  "id": 292,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "332:4:1",
@@ -8710,22 +8710,22 @@
             "name": "Offer",
             "nameLocation": "268:5:1",
             "nodeType": "StructDefinition",
-            "scope": 428,
+            "scope": 497,
             "src": "261:88:1",
             "visibility": "public"
           },
           {
             "canonicalName": "MicroGridContract.EnergyRequest",
-            "id": 232,
+            "id": 301,
             "members": [
               {
                 "constant": false,
-                "id": 227,
+                "id": 296,
                 "mutability": "mutable",
                 "name": "sender",
                 "nameLocation": "397:6:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 232,
+                "scope": 301,
                 "src": "389:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8734,7 +8734,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 226,
+                  "id": 295,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "389:7:1",
@@ -8748,12 +8748,12 @@
               },
               {
                 "constant": false,
-                "id": 229,
+                "id": 298,
                 "mutability": "mutable",
                 "name": "price",
                 "nameLocation": "422:5:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 232,
+                "scope": 301,
                 "src": "414:13:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8762,7 +8762,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 228,
+                  "id": 297,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "414:7:1",
@@ -8775,12 +8775,12 @@
               },
               {
                 "constant": false,
-                "id": 231,
+                "id": 300,
                 "mutability": "mutable",
                 "name": "quantityEnergy",
                 "nameLocation": "446:14:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 232,
+                "scope": 301,
                 "src": "438:22:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8789,7 +8789,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 230,
+                  "id": 299,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "438:7:1",
@@ -8804,30 +8804,30 @@
             "name": "EnergyRequest",
             "nameLocation": "364:13:1",
             "nodeType": "StructDefinition",
-            "scope": 428,
+            "scope": 497,
             "src": "357:111:1",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "e117ce37",
-            "id": 237,
+            "id": 306,
             "mutability": "mutable",
             "name": "eWOffersList",
             "nameLocation": "515:12:1",
             "nodeType": "VariableDeclaration",
-            "scope": 428,
+            "scope": 497,
             "src": "476:51:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_EnergyOffer_$218_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_EnergyOffer_$287_storage_$",
               "typeString": "mapping(address => struct MicroGridContract.EnergyOffer)"
             },
             "typeName": {
-              "id": 236,
+              "id": 305,
               "keyType": {
-                "id": 233,
+                "id": 302,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "484:7:1",
@@ -8839,23 +8839,23 @@
               "nodeType": "Mapping",
               "src": "476:31:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_EnergyOffer_$218_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_EnergyOffer_$287_storage_$",
                 "typeString": "mapping(address => struct MicroGridContract.EnergyOffer)"
               },
               "valueType": {
-                "id": 235,
+                "id": 304,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 234,
+                  "id": 303,
                   "name": "EnergyOffer",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 218,
+                  "referencedDeclaration": 287,
                   "src": "495:11:1"
                 },
-                "referencedDeclaration": 218,
+                "referencedDeclaration": 287,
                 "src": "495:11:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_EnergyOffer_$218_storage_ptr",
+                  "typeIdentifier": "t_struct$_EnergyOffer_$287_storage_ptr",
                   "typeString": "struct MicroGridContract.EnergyOffer"
                 }
               }
@@ -8865,23 +8865,23 @@
           {
             "constant": false,
             "functionSelector": "413bf38f",
-            "id": 242,
+            "id": 311,
             "mutability": "mutable",
             "name": "offers",
             "nameLocation": "611:6:1",
             "nodeType": "VariableDeclaration",
-            "scope": 428,
+            "scope": 497,
             "src": "578:39:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$225_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$294_storage_$",
               "typeString": "mapping(address => struct MicroGridContract.Offer)"
             },
             "typeName": {
-              "id": 241,
+              "id": 310,
               "keyType": {
-                "id": 238,
+                "id": 307,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "586:7:1",
@@ -8893,23 +8893,23 @@
               "nodeType": "Mapping",
               "src": "578:25:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$225_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$294_storage_$",
                 "typeString": "mapping(address => struct MicroGridContract.Offer)"
               },
               "valueType": {
-                "id": 240,
+                "id": 309,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 239,
+                  "id": 308,
                   "name": "Offer",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 225,
+                  "referencedDeclaration": 294,
                   "src": "597:5:1"
                 },
-                "referencedDeclaration": 225,
+                "referencedDeclaration": 294,
                 "src": "597:5:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Offer_$225_storage_ptr",
+                  "typeIdentifier": "t_struct$_Offer_$294_storage_ptr",
                   "typeString": "struct MicroGridContract.Offer"
                 }
               }
@@ -8919,12 +8919,12 @@
           {
             "constant": false,
             "functionSelector": "8828136c",
-            "id": 246,
+            "id": 315,
             "mutability": "mutable",
             "name": "tests",
             "nameLocation": "658:5:1",
             "nodeType": "VariableDeclaration",
-            "scope": 428,
+            "scope": 497,
             "src": "626:37:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -8933,9 +8933,9 @@
               "typeString": "mapping(address => uint256)"
             },
             "typeName": {
-              "id": 245,
+              "id": 314,
               "keyType": {
-                "id": 243,
+                "id": 312,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "634:7:1",
@@ -8951,7 +8951,7 @@
                 "typeString": "mapping(address => uint256)"
               },
               "valueType": {
-                "id": 244,
+                "id": 313,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
                 "src": "645:4:1",
@@ -8966,42 +8966,42 @@
           {
             "constant": false,
             "functionSelector": "16b04c9e",
-            "id": 250,
+            "id": 319,
             "mutability": "mutable",
             "name": "listOffers",
             "nameLocation": "693:10:1",
             "nodeType": "VariableDeclaration",
-            "scope": 428,
+            "scope": 497,
             "src": "672:31:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$218_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$287_storage_$dyn_storage",
               "typeString": "struct MicroGridContract.EnergyOffer[]"
             },
             "typeName": {
               "baseType": {
-                "id": 248,
+                "id": 317,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 247,
+                  "id": 316,
                   "name": "EnergyOffer",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 218,
+                  "referencedDeclaration": 287,
                   "src": "672:11:1"
                 },
-                "referencedDeclaration": 218,
+                "referencedDeclaration": 287,
                 "src": "672:11:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_EnergyOffer_$218_storage_ptr",
+                  "typeIdentifier": "t_struct$_EnergyOffer_$287_storage_ptr",
                   "typeString": "struct MicroGridContract.EnergyOffer"
                 }
               },
-              "id": 249,
+              "id": 318,
               "nodeType": "ArrayTypeName",
               "src": "672:13:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$218_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$287_storage_$dyn_storage_ptr",
                 "typeString": "struct MicroGridContract.EnergyOffer[]"
               }
             },
@@ -9010,42 +9010,42 @@
           {
             "constant": false,
             "functionSelector": "990fbe74",
-            "id": 254,
+            "id": 323,
             "mutability": "mutable",
             "name": "listRequest",
             "nameLocation": "733:11:1",
             "nodeType": "VariableDeclaration",
-            "scope": 428,
+            "scope": 497,
             "src": "710:34:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_storage_$dyn_storage",
               "typeString": "struct MicroGridContract.EnergyRequest[]"
             },
             "typeName": {
               "baseType": {
-                "id": 252,
+                "id": 321,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 251,
+                  "id": 320,
                   "name": "EnergyRequest",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 232,
+                  "referencedDeclaration": 301,
                   "src": "710:13:1"
                 },
-                "referencedDeclaration": 232,
+                "referencedDeclaration": 301,
                 "src": "710:13:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_EnergyRequest_$232_storage_ptr",
+                  "typeIdentifier": "t_struct$_EnergyRequest_$301_storage_ptr",
                   "typeString": "struct MicroGridContract.EnergyRequest"
                 }
               },
-              "id": 253,
+              "id": 322,
               "nodeType": "ArrayTypeName",
               "src": "710:15:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_storage_$dyn_storage_ptr",
                 "typeString": "struct MicroGridContract.EnergyRequest[]"
               }
             },
@@ -9054,42 +9054,42 @@
           {
             "constant": false,
             "functionSelector": "08f33bc8",
-            "id": 258,
+            "id": 327,
             "mutability": "mutable",
             "name": "offersList",
             "nameLocation": "766:10:1",
             "nodeType": "VariableDeclaration",
-            "scope": 428,
+            "scope": 497,
             "src": "751:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_Offer_$225_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_Offer_$294_storage_$dyn_storage",
               "typeString": "struct MicroGridContract.Offer[]"
             },
             "typeName": {
               "baseType": {
-                "id": 256,
+                "id": 325,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 255,
+                  "id": 324,
                   "name": "Offer",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 225,
+                  "referencedDeclaration": 294,
                   "src": "751:5:1"
                 },
-                "referencedDeclaration": 225,
+                "referencedDeclaration": 294,
                 "src": "751:5:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Offer_$225_storage_ptr",
+                  "typeIdentifier": "t_struct$_Offer_$294_storage_ptr",
                   "typeString": "struct MicroGridContract.Offer"
                 }
               },
-              "id": 257,
+              "id": 326,
               "nodeType": "ArrayTypeName",
               "src": "751:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_Offer_$225_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_Offer_$294_storage_$dyn_storage_ptr",
                 "typeString": "struct MicroGridContract.Offer[]"
               }
             },
@@ -9098,28 +9098,28 @@
           {
             "anonymous": false,
             "documentation": {
-              "id": 259,
+              "id": 328,
               "nodeType": "StructuredDocumentation",
               "src": "785:27:1",
               "text": " Events"
             },
-            "id": 263,
+            "id": 332,
             "name": "OfferCreated",
             "nameLocation": "826:12:1",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 262,
+              "id": 331,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 261,
+                  "id": 330,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "message",
                   "nameLocation": "846:7:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 263,
+                  "scope": 332,
                   "src": "839:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9128,7 +9128,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 260,
+                    "id": 329,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "839:6:1",
@@ -9146,23 +9146,23 @@
           },
           {
             "anonymous": false,
-            "id": 267,
+            "id": 336,
             "name": "RequestCreated",
             "nameLocation": "867:14:1",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 266,
+              "id": 335,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 265,
+                  "id": 334,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "message",
                   "nameLocation": "889:7:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 267,
+                  "scope": 336,
                   "src": "882:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9171,7 +9171,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 264,
+                    "id": 333,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "882:6:1",
@@ -9189,7 +9189,7 @@
           },
           {
             "body": {
-              "id": 296,
+              "id": 365,
               "nodeType": "Block",
               "src": "1078:175:1",
               "statements": [
@@ -9199,11 +9199,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 284,
+                            "id": 353,
                             "name": "asset",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 269,
+                            "referencedDeclaration": 338,
                             "src": "1131:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -9211,11 +9211,11 @@
                             }
                           },
                           {
-                            "id": 285,
+                            "id": 354,
                             "name": "price",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 271,
+                            "referencedDeclaration": 340,
                             "src": "1138:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -9223,11 +9223,11 @@
                             }
                           },
                           {
-                            "id": 286,
+                            "id": 355,
                             "name": "startDate",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 273,
+                            "referencedDeclaration": 342,
                             "src": "1145:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -9235,11 +9235,11 @@
                             }
                           },
                           {
-                            "id": 287,
+                            "id": 356,
                             "name": "endDate",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 275,
+                            "referencedDeclaration": 344,
                             "src": "1156:7:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -9247,11 +9247,11 @@
                             }
                           },
                           {
-                            "id": 288,
+                            "id": 357,
                             "name": "quantityEnergy",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 277,
+                            "referencedDeclaration": 346,
                             "src": "1165:14:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -9282,18 +9282,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 283,
+                          "id": 352,
                           "name": "EnergyOffer",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 218,
+                          "referencedDeclaration": 287,
                           "src": "1119:11:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_EnergyOffer_$218_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_EnergyOffer_$287_storage_ptr_$",
                             "typeString": "type(struct MicroGridContract.EnergyOffer storage pointer)"
                           }
                         },
-                        "id": 289,
+                        "id": 358,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9304,7 +9304,7 @@
                         "src": "1119:61:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_EnergyOffer_$218_memory_ptr",
+                          "typeIdentifier": "t_struct$_EnergyOffer_$287_memory_ptr",
                           "typeString": "struct MicroGridContract.EnergyOffer memory"
                         }
                       }
@@ -9312,23 +9312,23 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_EnergyOffer_$218_memory_ptr",
+                          "typeIdentifier": "t_struct$_EnergyOffer_$287_memory_ptr",
                           "typeString": "struct MicroGridContract.EnergyOffer memory"
                         }
                       ],
                       "expression": {
-                        "id": 280,
+                        "id": 349,
                         "name": "listOffers",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 250,
+                        "referencedDeclaration": 319,
                         "src": "1089:10:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$218_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$287_storage_$dyn_storage",
                           "typeString": "struct MicroGridContract.EnergyOffer storage ref[] storage ref"
                         }
                       },
-                      "id": 282,
+                      "id": 351,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9337,11 +9337,11 @@
                       "nodeType": "MemberAccess",
                       "src": "1089:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_EnergyOffer_$218_storage_$dyn_storage_ptr_$_t_struct$_EnergyOffer_$218_storage_$returns$__$bound_to$_t_array$_t_struct$_EnergyOffer_$218_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_EnergyOffer_$287_storage_$dyn_storage_ptr_$_t_struct$_EnergyOffer_$287_storage_$returns$__$bound_to$_t_array$_t_struct$_EnergyOffer_$287_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct MicroGridContract.EnergyOffer storage ref[] storage pointer,struct MicroGridContract.EnergyOffer storage ref)"
                       }
                     },
-                    "id": 290,
+                    "id": 359,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9356,7 +9356,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 291,
+                  "id": 360,
                   "nodeType": "ExpressionStatement",
                   "src": "1089:102:1"
                 },
@@ -9365,7 +9365,7 @@
                     "arguments": [
                       {
                         "hexValue": "4f6666657220686173206265656e2063726561746564",
-                        "id": 293,
+                        "id": 362,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9387,18 +9387,18 @@
                           "typeString": "literal_string \"Offer has been created\""
                         }
                       ],
-                      "id": 292,
+                      "id": 361,
                       "name": "OfferCreated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 263,
+                      "referencedDeclaration": 332,
                       "src": "1207:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 294,
+                    "id": 363,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9413,14 +9413,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 295,
+                  "id": 364,
                   "nodeType": "EmitStatement",
                   "src": "1202:43:1"
                 }
               ]
             },
             "functionSelector": "a491bbb8",
-            "id": 297,
+            "id": 366,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -9428,17 +9428,17 @@
             "nameLocation": "915:17:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 278,
+              "id": 347,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 269,
+                  "id": 338,
                   "mutability": "mutable",
                   "name": "asset",
                   "nameLocation": "951:5:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 297,
+                  "scope": 366,
                   "src": "943:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9447,7 +9447,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 268,
+                    "id": 337,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "943:7:1",
@@ -9461,12 +9461,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 271,
+                  "id": 340,
                   "mutability": "mutable",
                   "name": "price",
                   "nameLocation": "975:5:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 297,
+                  "scope": 366,
                   "src": "967:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9475,7 +9475,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 270,
+                    "id": 339,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "967:7:1",
@@ -9488,12 +9488,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 273,
+                  "id": 342,
                   "mutability": "mutable",
                   "name": "startDate",
                   "nameLocation": "996:9:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 297,
+                  "scope": 366,
                   "src": "991:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9502,7 +9502,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 272,
+                    "id": 341,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "991:4:1",
@@ -9515,12 +9515,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 275,
+                  "id": 344,
                   "mutability": "mutable",
                   "name": "endDate",
                   "nameLocation": "1021:7:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 297,
+                  "scope": 366,
                   "src": "1016:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9529,7 +9529,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 274,
+                    "id": 343,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1016:4:1",
@@ -9542,12 +9542,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 277,
+                  "id": 346,
                   "mutability": "mutable",
                   "name": "quantityEnergy",
                   "nameLocation": "1047:14:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 297,
+                  "scope": 366,
                   "src": "1039:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9556,7 +9556,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 276,
+                    "id": 345,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1039:7:1",
@@ -9571,12 +9571,12 @@
               "src": "932:136:1"
             },
             "returnParameters": {
-              "id": 279,
+              "id": 348,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1078:0:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "906:347:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -9584,7 +9584,7 @@
           },
           {
             "body": {
-              "id": 319,
+              "id": 388,
               "nodeType": "Block",
               "src": "1363:143:1",
               "statements": [
@@ -9595,7 +9595,7 @@
                         "arguments": [
                           {
                             "expression": {
-                              "id": 308,
+                              "id": 377,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -9606,7 +9606,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 309,
+                            "id": 378,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -9620,11 +9620,11 @@
                             }
                           },
                           {
-                            "id": 310,
+                            "id": 379,
                             "name": "price",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 299,
+                            "referencedDeclaration": 368,
                             "src": "1417:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -9632,11 +9632,11 @@
                             }
                           },
                           {
-                            "id": 311,
+                            "id": 380,
                             "name": "quantityEnergy",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 301,
+                            "referencedDeclaration": 370,
                             "src": "1424:14:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -9659,18 +9659,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 307,
+                          "id": 376,
                           "name": "EnergyRequest",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 232,
+                          "referencedDeclaration": 301,
                           "src": "1391:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_EnergyRequest_$232_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_EnergyRequest_$301_storage_ptr_$",
                             "typeString": "type(struct MicroGridContract.EnergyRequest storage pointer)"
                           }
                         },
-                        "id": 312,
+                        "id": 381,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9681,7 +9681,7 @@
                         "src": "1391:48:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_EnergyRequest_$232_memory_ptr",
+                          "typeIdentifier": "t_struct$_EnergyRequest_$301_memory_ptr",
                           "typeString": "struct MicroGridContract.EnergyRequest memory"
                         }
                       }
@@ -9689,23 +9689,23 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_EnergyRequest_$232_memory_ptr",
+                          "typeIdentifier": "t_struct$_EnergyRequest_$301_memory_ptr",
                           "typeString": "struct MicroGridContract.EnergyRequest memory"
                         }
                       ],
                       "expression": {
-                        "id": 304,
+                        "id": 373,
                         "name": "listRequest",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 254,
+                        "referencedDeclaration": 323,
                         "src": "1374:11:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_storage_$dyn_storage",
                           "typeString": "struct MicroGridContract.EnergyRequest storage ref[] storage ref"
                         }
                       },
-                      "id": 306,
+                      "id": 375,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9714,11 +9714,11 @@
                       "nodeType": "MemberAccess",
                       "src": "1374:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_EnergyRequest_$232_storage_$dyn_storage_ptr_$_t_struct$_EnergyRequest_$232_storage_$returns$__$bound_to$_t_array$_t_struct$_EnergyRequest_$232_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_EnergyRequest_$301_storage_$dyn_storage_ptr_$_t_struct$_EnergyRequest_$301_storage_$returns$__$bound_to$_t_array$_t_struct$_EnergyRequest_$301_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct MicroGridContract.EnergyRequest storage ref[] storage pointer,struct MicroGridContract.EnergyRequest storage ref)"
                       }
                     },
-                    "id": 313,
+                    "id": 382,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9733,7 +9733,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 314,
+                  "id": 383,
                   "nodeType": "ExpressionStatement",
                   "src": "1374:66:1"
                 },
@@ -9742,7 +9742,7 @@
                     "arguments": [
                       {
                         "hexValue": "5265717565737420686173206265656e2063726561746564",
-                        "id": 316,
+                        "id": 385,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9764,18 +9764,18 @@
                           "typeString": "literal_string \"Request has been created\""
                         }
                       ],
-                      "id": 315,
+                      "id": 384,
                       "name": "RequestCreated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 267,
+                      "referencedDeclaration": 336,
                       "src": "1456:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 317,
+                    "id": 386,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9790,14 +9790,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 318,
+                  "id": 387,
                   "nodeType": "EmitStatement",
                   "src": "1451:47:1"
                 }
               ]
             },
             "functionSelector": "4a5a9d22",
-            "id": 320,
+            "id": 389,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -9805,17 +9805,17 @@
             "nameLocation": "1270:19:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 302,
+              "id": 371,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 299,
+                  "id": 368,
                   "mutability": "mutable",
                   "name": "price",
                   "nameLocation": "1308:5:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 320,
+                  "scope": 389,
                   "src": "1300:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9824,7 +9824,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 298,
+                    "id": 367,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1300:7:1",
@@ -9837,12 +9837,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 301,
+                  "id": 370,
                   "mutability": "mutable",
                   "name": "quantityEnergy",
                   "nameLocation": "1332:14:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 320,
+                  "scope": 389,
                   "src": "1324:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9851,7 +9851,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 300,
+                    "id": 369,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1324:7:1",
@@ -9866,12 +9866,12 @@
               "src": "1289:64:1"
             },
             "returnParameters": {
-              "id": 303,
+              "id": 372,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1363:0:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "1261:245:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -9879,75 +9879,75 @@
           },
           {
             "body": {
-              "id": 333,
+              "id": 402,
               "nodeType": "Block",
               "src": "1626:59:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 329,
+                    "id": 398,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 327,
+                      "id": 396,
                       "name": "list",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 325,
+                      "referencedDeclaration": 394,
                       "src": "1637:4:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+                        "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
                         "typeString": "struct MicroGridContract.EnergyRequest memory[] memory"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 328,
+                      "id": 397,
                       "name": "listRequest",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 254,
+                      "referencedDeclaration": 323,
                       "src": "1644:11:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_storage_$dyn_storage",
                         "typeString": "struct MicroGridContract.EnergyRequest storage ref[] storage ref"
                       }
                     },
                     "src": "1637:18:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct MicroGridContract.EnergyRequest memory[] memory"
                     }
                   },
-                  "id": 330,
+                  "id": 399,
                   "nodeType": "ExpressionStatement",
                   "src": "1637:18:1"
                 },
                 {
                   "expression": {
-                    "id": 331,
+                    "id": 400,
                     "name": "list",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 325,
+                    "referencedDeclaration": 394,
                     "src": "1673:4:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct MicroGridContract.EnergyRequest memory[] memory"
                     }
                   },
-                  "functionReturnParameters": 326,
-                  "id": 332,
+                  "functionReturnParameters": 395,
+                  "id": 401,
                   "nodeType": "Return",
                   "src": "1666:11:1"
                 }
               ]
             },
             "functionSelector": "e0e3c9f7",
-            "id": 334,
+            "id": 403,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -9955,53 +9955,53 @@
             "nameLocation": "1523:16:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 321,
+              "id": 390,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1539:2:1"
             },
             "returnParameters": {
-              "id": 326,
+              "id": 395,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 325,
+                  "id": 394,
                   "mutability": "mutable",
                   "name": "list",
                   "nameLocation": "1615:4:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 334,
+                  "scope": 403,
                   "src": "1592:27:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct MicroGridContract.EnergyRequest[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 323,
+                      "id": 392,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 322,
+                        "id": 391,
                         "name": "EnergyRequest",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 232,
+                        "referencedDeclaration": 301,
                         "src": "1592:13:1"
                       },
-                      "referencedDeclaration": 232,
+                      "referencedDeclaration": 301,
                       "src": "1592:13:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_EnergyRequest_$232_storage_ptr",
+                        "typeIdentifier": "t_struct$_EnergyRequest_$301_storage_ptr",
                         "typeString": "struct MicroGridContract.EnergyRequest"
                       }
                     },
-                    "id": 324,
+                    "id": 393,
                     "nodeType": "ArrayTypeName",
                     "src": "1592:15:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$232_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_EnergyRequest_$301_storage_$dyn_storage_ptr",
                       "typeString": "struct MicroGridContract.EnergyRequest[]"
                     }
                   },
@@ -10010,7 +10010,7 @@
               ],
               "src": "1591:29:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "1514:171:1",
             "stateMutability": "view",
             "virtual": false,
@@ -10018,32 +10018,32 @@
           },
           {
             "body": {
-              "id": 343,
+              "id": 412,
               "nodeType": "Block",
               "src": "1757:36:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 341,
+                    "id": 410,
                     "name": "listOffers",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 250,
+                    "referencedDeclaration": 319,
                     "src": "1775:10:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$218_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$287_storage_$dyn_storage",
                       "typeString": "struct MicroGridContract.EnergyOffer storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 340,
-                  "id": 342,
+                  "functionReturnParameters": 409,
+                  "id": 411,
                   "nodeType": "Return",
                   "src": "1768:17:1"
                 }
               ]
             },
             "functionSelector": "3ee992ee",
-            "id": 344,
+            "id": 413,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10051,53 +10051,53 @@
             "nameLocation": "1702:9:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 335,
+              "id": 404,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1711:2:1"
             },
             "returnParameters": {
-              "id": 340,
+              "id": 409,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 339,
+                  "id": 408,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 344,
+                  "scope": 413,
                   "src": "1735:20:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$218_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$287_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct MicroGridContract.EnergyOffer[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 337,
+                      "id": 406,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 336,
+                        "id": 405,
                         "name": "EnergyOffer",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 218,
+                        "referencedDeclaration": 287,
                         "src": "1735:11:1"
                       },
-                      "referencedDeclaration": 218,
+                      "referencedDeclaration": 287,
                       "src": "1735:11:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_EnergyOffer_$218_storage_ptr",
+                        "typeIdentifier": "t_struct$_EnergyOffer_$287_storage_ptr",
                         "typeString": "struct MicroGridContract.EnergyOffer"
                       }
                     },
-                    "id": 338,
+                    "id": 407,
                     "nodeType": "ArrayTypeName",
                     "src": "1735:13:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$218_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_EnergyOffer_$287_storage_$dyn_storage_ptr",
                       "typeString": "struct MicroGridContract.EnergyOffer[]"
                     }
                   },
@@ -10106,7 +10106,7 @@
               ],
               "src": "1734:22:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "1693:100:1",
             "stateMutability": "view",
             "virtual": false,
@@ -10114,59 +10114,59 @@
           },
           {
             "body": {
-              "id": 379,
+              "id": 448,
               "nodeType": "Block",
               "src": "1888:200:1",
               "statements": [
                 {
                   "assignments": [
-                    356
+                    425
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 356,
+                      "id": 425,
                       "mutability": "mutable",
                       "name": "newOffer",
                       "nameLocation": "1912:8:1",
                       "nodeType": "VariableDeclaration",
-                      "scope": 379,
+                      "scope": 448,
                       "src": "1899:21:1",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Offer_$225_memory_ptr",
+                        "typeIdentifier": "t_struct$_Offer_$294_memory_ptr",
                         "typeString": "struct MicroGridContract.Offer"
                       },
                       "typeName": {
-                        "id": 355,
+                        "id": 424,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 354,
+                          "id": 423,
                           "name": "Offer",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 225,
+                          "referencedDeclaration": 294,
                           "src": "1899:5:1"
                         },
-                        "referencedDeclaration": 225,
+                        "referencedDeclaration": 294,
                         "src": "1899:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Offer_$225_storage_ptr",
+                          "typeIdentifier": "t_struct$_Offer_$294_storage_ptr",
                           "typeString": "struct MicroGridContract.Offer"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 362,
+                  "id": 431,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 358,
+                        "id": 427,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 347,
+                        "referencedDeclaration": 416,
                         "src": "1929:8:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -10174,11 +10174,11 @@
                         }
                       },
                       {
-                        "id": 359,
+                        "id": 428,
                         "name": "price",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 349,
+                        "referencedDeclaration": 418,
                         "src": "1939:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -10186,11 +10186,11 @@
                         }
                       },
                       {
-                        "id": 360,
+                        "id": 429,
                         "name": "date",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 351,
+                        "referencedDeclaration": 420,
                         "src": "1946:4:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -10213,18 +10213,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 357,
+                      "id": 426,
                       "name": "Offer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 225,
+                      "referencedDeclaration": 294,
                       "src": "1923:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Offer_$225_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Offer_$294_storage_ptr_$",
                         "typeString": "type(struct MicroGridContract.Offer storage pointer)"
                       }
                     },
-                    "id": 361,
+                    "id": 430,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10235,7 +10235,7 @@
                     "src": "1923:28:1",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Offer_$225_memory_ptr",
+                      "typeIdentifier": "t_struct$_Offer_$294_memory_ptr",
                       "typeString": "struct MicroGridContract.Offer memory"
                     }
                   },
@@ -10244,31 +10244,31 @@
                 },
                 {
                   "expression": {
-                    "id": 367,
+                    "id": 436,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 363,
+                        "id": 432,
                         "name": "offers",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 242,
+                        "referencedDeclaration": 311,
                         "src": "1962:6:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$225_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$294_storage_$",
                           "typeString": "mapping(address => struct MicroGridContract.Offer storage ref)"
                         }
                       },
-                      "id": 365,
+                      "id": 434,
                       "indexExpression": {
-                        "id": 364,
+                        "id": 433,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 347,
+                        "referencedDeclaration": 416,
                         "src": "1969:8:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -10282,31 +10282,31 @@
                       "nodeType": "IndexAccess",
                       "src": "1962:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Offer_$225_storage",
+                        "typeIdentifier": "t_struct$_Offer_$294_storage",
                         "typeString": "struct MicroGridContract.Offer storage ref"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 366,
+                      "id": 435,
                       "name": "newOffer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 356,
+                      "referencedDeclaration": 425,
                       "src": "1981:8:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Offer_$225_memory_ptr",
+                        "typeIdentifier": "t_struct$_Offer_$294_memory_ptr",
                         "typeString": "struct MicroGridContract.Offer memory"
                       }
                     },
                     "src": "1962:27:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Offer_$225_storage",
+                      "typeIdentifier": "t_struct$_Offer_$294_storage",
                       "typeString": "struct MicroGridContract.Offer storage ref"
                     }
                   },
-                  "id": 368,
+                  "id": 437,
                   "nodeType": "ExpressionStatement",
                   "src": "1962:27:1"
                 },
@@ -10316,11 +10316,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 373,
+                            "id": 442,
                             "name": "_address",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 347,
+                            "referencedDeclaration": 416,
                             "src": "2057:8:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -10328,11 +10328,11 @@
                             }
                           },
                           {
-                            "id": 374,
+                            "id": 443,
                             "name": "price",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 349,
+                            "referencedDeclaration": 418,
                             "src": "2067:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -10340,11 +10340,11 @@
                             }
                           },
                           {
-                            "id": 375,
+                            "id": 444,
                             "name": "date",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 351,
+                            "referencedDeclaration": 420,
                             "src": "2074:4:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -10367,18 +10367,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 372,
+                          "id": 441,
                           "name": "Offer",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 225,
+                          "referencedDeclaration": 294,
                           "src": "2051:5:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_Offer_$225_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_Offer_$294_storage_ptr_$",
                             "typeString": "type(struct MicroGridContract.Offer storage pointer)"
                           }
                         },
-                        "id": 376,
+                        "id": 445,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10389,7 +10389,7 @@
                         "src": "2051:28:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Offer_$225_memory_ptr",
+                          "typeIdentifier": "t_struct$_Offer_$294_memory_ptr",
                           "typeString": "struct MicroGridContract.Offer memory"
                         }
                       }
@@ -10397,23 +10397,23 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Offer_$225_memory_ptr",
+                          "typeIdentifier": "t_struct$_Offer_$294_memory_ptr",
                           "typeString": "struct MicroGridContract.Offer memory"
                         }
                       ],
                       "expression": {
-                        "id": 369,
+                        "id": 438,
                         "name": "offersList",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 258,
+                        "referencedDeclaration": 327,
                         "src": "2035:10:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Offer_$225_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Offer_$294_storage_$dyn_storage",
                           "typeString": "struct MicroGridContract.Offer storage ref[] storage ref"
                         }
                       },
-                      "id": 371,
+                      "id": 440,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -10422,11 +10422,11 @@
                       "nodeType": "MemberAccess",
                       "src": "2035:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Offer_$225_storage_$dyn_storage_ptr_$_t_struct$_Offer_$225_storage_$returns$__$bound_to$_t_array$_t_struct$_Offer_$225_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Offer_$294_storage_$dyn_storage_ptr_$_t_struct$_Offer_$294_storage_$returns$__$bound_to$_t_array$_t_struct$_Offer_$294_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct MicroGridContract.Offer storage ref[] storage pointer,struct MicroGridContract.Offer storage ref)"
                       }
                     },
-                    "id": 377,
+                    "id": 446,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10441,20 +10441,20 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 378,
+                  "id": 447,
                   "nodeType": "ExpressionStatement",
                   "src": "2035:45:1"
                 }
               ]
             },
             "documentation": {
-              "id": 345,
+              "id": 414,
               "nodeType": "StructuredDocumentation",
               "src": "1801:10:1",
               "text": "NEW  "
             },
             "functionSelector": "1c6c7128",
-            "id": 380,
+            "id": 449,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10462,17 +10462,17 @@
             "nameLocation": "1826:11:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 352,
+              "id": 421,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 347,
+                  "id": 416,
                   "mutability": "mutable",
                   "name": "_address",
                   "nameLocation": "1846:8:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 380,
+                  "scope": 449,
                   "src": "1838:16:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10481,7 +10481,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 346,
+                    "id": 415,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1838:7:1",
@@ -10495,12 +10495,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 349,
+                  "id": 418,
                   "mutability": "mutable",
                   "name": "price",
                   "nameLocation": "1861:5:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 380,
+                  "scope": 449,
                   "src": "1856:10:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10509,7 +10509,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 348,
+                    "id": 417,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1856:4:1",
@@ -10522,12 +10522,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 351,
+                  "id": 420,
                   "mutability": "mutable",
                   "name": "date",
                   "nameLocation": "1873:4:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 380,
+                  "scope": 449,
                   "src": "1868:9:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10536,7 +10536,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 350,
+                    "id": 419,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1868:4:1",
@@ -10551,12 +10551,12 @@
               "src": "1837:41:1"
             },
             "returnParameters": {
-              "id": 353,
+              "id": 422,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1888:0:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "1817:271:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -10564,34 +10564,34 @@
           },
           {
             "body": {
-              "id": 392,
+              "id": 461,
               "nodeType": "Block",
               "src": "2137:44:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 390,
+                    "id": 459,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 385,
+                        "id": 454,
                         "name": "tests",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 246,
+                        "referencedDeclaration": 315,
                         "src": "2148:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                           "typeString": "mapping(address => uint256)"
                         }
                       },
-                      "id": 388,
+                      "id": 457,
                       "indexExpression": {
                         "expression": {
-                          "id": 386,
+                          "id": 455,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -10602,7 +10602,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 387,
+                        "id": 456,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10629,11 +10629,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 389,
+                      "id": 458,
                       "name": "price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 382,
+                      "referencedDeclaration": 451,
                       "src": "2168:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -10646,14 +10646,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 391,
+                  "id": 460,
                   "nodeType": "ExpressionStatement",
                   "src": "2148:25:1"
                 }
               ]
             },
             "functionSelector": "4865f28d",
-            "id": 393,
+            "id": 462,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10661,17 +10661,17 @@
             "nameLocation": "2105:10:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 383,
+              "id": 452,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 382,
+                  "id": 451,
                   "mutability": "mutable",
                   "name": "price",
                   "nameLocation": "2121:5:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 393,
+                  "scope": 462,
                   "src": "2116:10:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10680,7 +10680,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 381,
+                    "id": 450,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2116:4:1",
@@ -10695,12 +10695,12 @@
               "src": "2115:12:1"
             },
             "returnParameters": {
-              "id": 384,
+              "id": 453,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2137:0:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "2096:85:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -10708,28 +10708,28 @@
           },
           {
             "body": {
-              "id": 403,
+              "id": 472,
               "nodeType": "Block",
               "src": "2239:43:1",
               "statements": [
                 {
                   "expression": {
                     "baseExpression": {
-                      "id": 398,
+                      "id": 467,
                       "name": "tests",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 246,
+                      "referencedDeclaration": 315,
                       "src": "2257:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                         "typeString": "mapping(address => uint256)"
                       }
                     },
-                    "id": 401,
+                    "id": 470,
                     "indexExpression": {
                       "expression": {
-                        "id": 399,
+                        "id": 468,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -10740,7 +10740,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 400,
+                      "id": 469,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -10764,15 +10764,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 397,
-                  "id": 402,
+                  "functionReturnParameters": 466,
+                  "id": 471,
                   "nodeType": "Return",
                   "src": "2250:24:1"
                 }
               ]
             },
             "functionSelector": "420d4345",
-            "id": 404,
+            "id": 473,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10780,23 +10780,23 @@
             "nameLocation": "2198:11:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 394,
+              "id": 463,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2209:2:1"
             },
             "returnParameters": {
-              "id": 397,
+              "id": 466,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 396,
+                  "id": 465,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 404,
+                  "scope": 473,
                   "src": "2233:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10805,7 +10805,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 395,
+                    "id": 464,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2233:4:1",
@@ -10819,7 +10819,7 @@
               ],
               "src": "2232:6:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "2189:93:1",
             "stateMutability": "view",
             "virtual": false,
@@ -10827,31 +10827,31 @@
           },
           {
             "body": {
-              "id": 416,
+              "id": 485,
               "nodeType": "Block",
               "src": "2391:42:1",
               "statements": [
                 {
                   "expression": {
                     "baseExpression": {
-                      "id": 412,
+                      "id": 481,
                       "name": "offers",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 242,
+                      "referencedDeclaration": 311,
                       "src": "2409:6:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$225_storage_$",
+                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Offer_$294_storage_$",
                         "typeString": "mapping(address => struct MicroGridContract.Offer storage ref)"
                       }
                     },
-                    "id": 414,
+                    "id": 483,
                     "indexExpression": {
-                      "id": 413,
+                      "id": 482,
                       "name": "_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 406,
+                      "referencedDeclaration": 475,
                       "src": "2416:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -10865,19 +10865,19 @@
                     "nodeType": "IndexAccess",
                     "src": "2409:16:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Offer_$225_storage",
+                      "typeIdentifier": "t_struct$_Offer_$294_storage",
                       "typeString": "struct MicroGridContract.Offer storage ref"
                     }
                   },
-                  "functionReturnParameters": 411,
-                  "id": 415,
+                  "functionReturnParameters": 480,
+                  "id": 484,
                   "nodeType": "Return",
                   "src": "2402:23:1"
                 }
               ]
             },
             "functionSelector": "4e08407f",
-            "id": 417,
+            "id": 486,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10885,17 +10885,17 @@
             "nameLocation": "2299:22:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 407,
+              "id": 476,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 406,
+                  "id": 475,
                   "mutability": "mutable",
                   "name": "_address",
                   "nameLocation": "2340:8:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 417,
+                  "scope": 486,
                   "src": "2332:16:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10904,7 +10904,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 405,
+                    "id": 474,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2332:7:1",
@@ -10920,38 +10920,38 @@
               "src": "2321:34:1"
             },
             "returnParameters": {
-              "id": 411,
+              "id": 480,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 410,
+                  "id": 479,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 417,
+                  "scope": 486,
                   "src": "2377:12:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Offer_$225_memory_ptr",
+                    "typeIdentifier": "t_struct$_Offer_$294_memory_ptr",
                     "typeString": "struct MicroGridContract.Offer"
                   },
                   "typeName": {
-                    "id": 409,
+                    "id": 478,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 408,
+                      "id": 477,
                       "name": "Offer",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 225,
+                      "referencedDeclaration": 294,
                       "src": "2377:5:1"
                     },
-                    "referencedDeclaration": 225,
+                    "referencedDeclaration": 294,
                     "src": "2377:5:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Offer_$225_storage_ptr",
+                      "typeIdentifier": "t_struct$_Offer_$294_storage_ptr",
                       "typeString": "struct MicroGridContract.Offer"
                     }
                   },
@@ -10960,7 +10960,7 @@
               ],
               "src": "2376:14:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "2290:143:1",
             "stateMutability": "view",
             "virtual": false,
@@ -10968,32 +10968,32 @@
           },
           {
             "body": {
-              "id": 426,
+              "id": 495,
               "nodeType": "Block",
               "src": "2502:36:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 424,
+                    "id": 493,
                     "name": "offersList",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 258,
+                    "referencedDeclaration": 327,
                     "src": "2520:10:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Offer_$225_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_Offer_$294_storage_$dyn_storage",
                       "typeString": "struct MicroGridContract.Offer storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 423,
-                  "id": 425,
+                  "functionReturnParameters": 492,
+                  "id": 494,
                   "nodeType": "Return",
                   "src": "2513:17:1"
                 }
               ]
             },
             "functionSelector": "a1655278",
-            "id": 427,
+            "id": 496,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -11001,53 +11001,53 @@
             "nameLocation": "2450:12:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 418,
+              "id": 487,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2462:2:1"
             },
             "returnParameters": {
-              "id": 423,
+              "id": 492,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 422,
+                  "id": 491,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 427,
+                  "scope": 496,
                   "src": "2486:14:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Offer_$225_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Offer_$294_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct MicroGridContract.Offer[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 420,
+                      "id": 489,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 419,
+                        "id": 488,
                         "name": "Offer",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 225,
+                        "referencedDeclaration": 294,
                         "src": "2486:5:1"
                       },
-                      "referencedDeclaration": 225,
+                      "referencedDeclaration": 294,
                       "src": "2486:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Offer_$225_storage_ptr",
+                        "typeIdentifier": "t_struct$_Offer_$294_storage_ptr",
                         "typeString": "struct MicroGridContract.Offer"
                       }
                     },
-                    "id": 421,
+                    "id": 490,
                     "nodeType": "ArrayTypeName",
                     "src": "2486:7:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Offer_$225_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Offer_$294_storage_$dyn_storage_ptr",
                       "typeString": "struct MicroGridContract.Offer[]"
                     }
                   },
@@ -11056,14 +11056,14 @@
               ],
               "src": "2485:16:1"
             },
-            "scope": 428,
+            "scope": 497,
             "src": "2441:97:1",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 429,
+        "scope": 498,
         "src": "63:2478:1",
         "usedErrors": []
       }
@@ -11078,12 +11078,12 @@
     "1337": {
       "events": {},
       "links": {},
-      "address": "0x690A962c4D8EEFC4b58028F724c3081e9834F082",
-      "transactionHash": "0xb9b855b6bfca9c0cb8d7bef181e11940d5d86cd735c26db23370f6ddd7375a37"
+      "address": "0x47b288fF1d7469f216bE4aea5B452091AD694cE4",
+      "transactionHash": "0xe9b04def3ffe6c4188af2c96fe1766dcc18907722cb906231725038bfd81b51a"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-18T14:43:51.362Z",
+  "updatedAt": "2023-04-22T09:19:10.290Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

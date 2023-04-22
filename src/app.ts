@@ -14,7 +14,7 @@ class App {
     this.app = express();
     this.port = port;
     /* Run every 15 minutes*/
-    this.smartMeter = new SmartMeterService("*/20 * * * *");
+    this.smartMeter = new SmartMeterService("*/15 * * * *");
 
     this.setupCors();
     this.initializeMiddlewares();

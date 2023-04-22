@@ -23,7 +23,7 @@ export default class UserController {
   private defineRoutes() {
     this.router.get(`${this.path}/:address`, this.checkUser);
     this.router.post(`${this.path}/auth`, this.authenticate);
-    this.router.post(`${this.path}/create/:address`, this.createUser);
+    this.router.post(`${this.path}/create`, this.createUser);
     this.router.get(
       `${this.path}/energy/list`,
       auth,
@@ -42,7 +42,8 @@ export default class UserController {
     next: express.NextFunction
   ) => {
     let nonce;
-    const accountAddress = request.params.address;
+    const accountAddress = request.params.address.toLowerCase();
+
     const user = await this.user.findOne({
       address: accountAddress,
     });
@@ -92,14 +93,12 @@ export default class UserController {
     response: express.Response,
     next: express.NextFunction
   ) => {
-    const public_address = request.params.address;
-
     const user_request: User = request.body;
 
-    if (public_address) {
+    if (user_request.address) {
       const nonce = crypto.randomBytes(16).toString("base64");
       user_request.nonce = nonce;
-      user_request.address = public_address;
+      user_request.address = user_request.address.toLowerCase();
       await this.user.create(user_request);
 
       response.send(APIresponse.success("User has been created"));

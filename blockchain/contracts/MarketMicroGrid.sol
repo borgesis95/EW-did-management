@@ -39,6 +39,9 @@ contract MarketMicroGridContract {
     Matching[] public matching;
     Matching public matchTest;
 
+    mapping(address => Offer[]) public userOffers;
+    mapping(address => Bid[]) public userBids;
+
     /**Events */
     event OfferCreated(string message);
     event BidCreated(string message);
@@ -50,7 +53,12 @@ contract MarketMicroGridContract {
         uint _creationDate
     ) external {
         offers.push(Offer(_address, _maxPrice, _creationDate));
-        emit OfferCreated("Offer created");
+        userOffers[_address].push(Offer(_address, _maxPrice, _creationDate));
+        emit OfferCreated("Offer created succesfully");
+    }
+
+    function deleteAllOffers() external {
+        delete offers;
     }
 
     function createBid(
@@ -59,6 +67,7 @@ contract MarketMicroGridContract {
         uint _creationDate
     ) external {
         bids.push(Bid(_address, _minPrice, _creationDate));
+        userBids[_address].push(Bid(_address, _minPrice, _creationDate));
         emit BidCreated("Bid created");
     }
 
@@ -72,6 +81,18 @@ contract MarketMicroGridContract {
 
     function getOffers() public view returns (Offer[] memory) {
         return offers;
+    }
+
+    function getOffersByAddress(
+        address _address
+    ) public view returns (Offer[] memory) {
+        return userOffers[_address];
+    }
+
+    function getBidsByAddress(
+        address _address
+    ) public view returns (Bid[] memory) {
+        return userBids[_address];
     }
 
     function getBids() public view returns (Bid[] memory) {

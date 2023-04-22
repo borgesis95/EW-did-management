@@ -69,24 +69,32 @@ export default class GridController {
     response: express.Response,
     next: express.NextFunction
   ) => {
-    const users = await this.smartMeterService.retrieveUsersAndPush();
+    const smartMetersMisurations =
+      await this.smartMeterService.retrieveUsersAndPush(true);
     const offersList = await this.contractService.getAllOffers();
     const bidsList = await this.contractService.getBids();
 
-    /**Filter user that has negative differ and needs energy from others prosumers */
-    const usersNeedsEnergy = users.filter((user) => user.diff < 0);
-    /* User who producted more energy than needed */
-    const prosumers = users.filter((user) => user.diff > 0);
+    console.log("smart meter misuration:", smartMetersMisurations);
 
     const prosumerCanSellEnergyList =
-      this.filterProsumersThatCanSellEnergyAndHasOffers(users, offersList);
+      this.filterProsumersThatCanSellEnergyAndHasOffers(
+        smartMetersMisurations,
+        offersList
+      );
+
+    // console.log("prosumer with offers", prosumerCanSellEnergyList);
 
     const consumersWantEnergyList = this.filterConsumersWantBuyEnergyFromP2p(
-      users,
+      smartMetersMisurations,
       bidsList
     );
+    // console.log("PROSUMER", prosumerCanSellEnergyList);
+    // console.log("consumer buyers", consumersWantEnergyList);
 
-    const energyTransactionList = this.clearMarket(DEMANDS_MOCK, OFFERS_MOCK);
+    const energyTransactionList = this.clearMarket(
+      consumersWantEnergyList,
+      prosumerCanSellEnergyList
+    );
 
     // energyTransactionList.forEach(async (match) => {
     //   await this.contractService.addMatching(match);
@@ -108,8 +116,9 @@ export default class GridController {
 
     const prosumersOffers = offers.map((item: any) => {
       const prosumerWithOfferCreated = prosumers.find(
-        (prosumer) => prosumer.user_id === item.user
+        (prosumer) => prosumer.user_id === item.user.toLowerCase()
       );
+
       if (prosumerWithOfferCreated) {
         return {
           user: prosumerWithOfferCreated.user_id,
@@ -127,13 +136,14 @@ export default class GridController {
     bids: any[]
   ) => {
     /* User who producted more energy than needed */
+
     const consumers = energyDataInfo.filter(
       (energyInfo) => energyInfo.diff < 0
     );
 
     const consumerBids = bids.map((item: any) => {
       const consumerWithBidsCreated = consumers.find(
-        (prosumer) => prosumer.user_id === item.user
+        (prosumer) => prosumer.user_id === item.user.toLowerCase()
       );
 
       if (consumerWithBidsCreated) {
@@ -152,9 +162,6 @@ export default class GridController {
    * Method that will be used to matching demands and response
    */
   private clearMarket(demands: ConsumerBid[], offers: ProsumerOffer[]) {
-    // console.log("OFFERS", offers);
-    // console.log("DEMANDS", demands);
-
     console.log("--- START ALGORITHM ---", "\n\n");
     /* Order Request by price . In this way the algorithm will give
       priority to consumers which are willing to pay more to obtain electricity.
@@ -221,9 +228,6 @@ export default class GridController {
       }
     }
 
-    console.log("enegyExchangeList", energyExchangeList);
-    // console.log("DEMANDS", demands);
-    // console.log("OFFERS", offers);
     return energyExchangeList;
   }
 
