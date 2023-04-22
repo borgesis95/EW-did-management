@@ -170,12 +170,12 @@ export default class GridController {
 
     let energyExchangeList: EnergyMatchingDto[] = [];
     const demandsByHighestPrice = demands?.sort((a, b) => {
-      if (a.price < b.price) return 1;
+      if (parseInt(a.price) < parseInt(b.price)) return 1;
       else return -1;
     });
 
     const offersByLowestPrice = offers?.sort((a, b) => {
-      if (a.price > b.price) return 1;
+      if (parseInt(a.price) > parseInt(b.price)) return 1;
       else return -1;
     });
 
@@ -189,9 +189,10 @@ export default class GridController {
         if (
           demands[i].wantBuy !== 0 &&
           offers[j].canSell !== 0 &&
-          offers[j].price <= demands[i].price
+          parseInt(offers[j].price) <= parseInt(demands[i].price) // minPrice << MaxPrice
         ) {
           if (offers[j].canSell >= demands[i].wantBuy) {
+            const totalEnergyRemain = offers[j].canSell;
             const totalEnergyTransfer = demands[i].wantBuy;
             const powerRemained = offers[j].canSell - totalEnergyTransfer;
 
@@ -206,7 +207,14 @@ export default class GridController {
               from: offers[i].user,
               to: demands[i].user,
               quantity: totalEnergyTransfer,
-              price: totalEnergyTransfer * parseInt(offers[j].price),
+              price:
+                totalEnergyTransfer *
+                this.buildPrice(
+                  parseInt(offers[j].price),
+                  parseInt(demands[i].price),
+                  totalEnergyTransfer,
+                  totalEnergyRemain
+                ),
             });
           } else {
             const totalEnergyTransfer = offers[j].canSell;
@@ -221,7 +229,15 @@ export default class GridController {
               from: offers[i].user,
               to: demands[i].user,
               quantity: totalEnergyTransfer,
-              price: totalEnergyTransfer * parseInt(offers[j].price),
+              price:
+                totalEnergyTransfer *
+                this.buildPrice(
+                  parseInt(offers[j].price),
+                  parseInt(demands[i].price),
+                  totalEnergyTransfer,
+                  totalEnergyTransfer
+                ),
+              // price: totalEnergyTransfer * parseInt(offers[j].price),
             });
           }
         }
@@ -249,4 +265,45 @@ export default class GridController {
     const response = this.smartMeterService.solarEnergyCurve();
     res.send(response);
   };
+
+  /**
+   *
+   * @param offerPrice
+   * @param demandPrice
+   * @param energyBought
+   * @param energyAvaiableFromProsumer
+   */
+  private buildPrice(
+    offerPrice: number,
+    demandPrice: number,
+    energyBought: number,
+    energyAvaiableFromProsumer: number
+  ): number {
+    console.log("offer price:", offerPrice);
+    console.log("demand price", demandPrice);
+    console.log("energyBought", energyBought);
+    console.log("energyAvailableFromProsumer", energyAvaiableFromProsumer);
+
+    const rateEnergyBuyed = (energyBought / energyAvaiableFromProsumer) * 100;
+
+    const discount = this.calcDiscount(rateEnergyBuyed);
+
+    const price = (offerPrice + demandPrice) / 2;
+    const priceTotal = price - (price * discount) / 100;
+    return priceTotal;
+  }
+
+  private calcDiscount(rateEnergyBuyed: number) {
+    // Between 0 and 30 there isn't discount
+    let discount = 0;
+    if (rateEnergyBuyed > 30 && rateEnergyBuyed <= 60) {
+      discount = 5;
+    } else if (rateEnergyBuyed > 60 && rateEnergyBuyed <= 90) {
+      discount = 10;
+    } else if (rateEnergyBuyed > 90) {
+      discount = 20;
+    }
+
+    return discount;
+  }
 }
