@@ -1,12 +1,11 @@
-import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
-import {
-  initWithPrivateKeySigner,
-  MessagingMethod,
-  setChainConfig,
-  setMessagingConfig,
-  setCacheConfig,
-} from "iam-client-lib";
+// import {
+//   initWithPrivateKeySigner,
+//   MessagingMethod,
+//   setChainConfig,
+//   setMessagingConfig,
+//   setCacheConfig,
+// } from "iam-client-lib";
 import App from "./app";
 import AssetsController from "./controller/assets.controller";
 import { config, VOLTA_CHAIN_ID } from "./config/config";

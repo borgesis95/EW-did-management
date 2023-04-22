@@ -10,7 +10,7 @@
       "name": "Launch Program",
       "program": "${workspaceFolder}/src/server.ts",
       "preLaunchTask": "npm: build",
-      "outFiles": ["${workspaceFolder}/out/**/*.js"]
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
     }
   ]
 }

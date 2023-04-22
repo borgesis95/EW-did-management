@@ -1,5 +1,4 @@
 import * as express from "express";
-import { AssetsService } from "iam-client-lib";
 import { auth } from "../middleware/auth";
 import userModel from "../models/user.model";
 import APIresponse from "../response/response";
@@ -7,22 +6,21 @@ import ContractService from "../services/contract.service";
 export default class AssetsController {
   public path = "/assets";
   public router = express.Router();
-  private assetService?: AssetsService;
   private user = userModel;
 
   //TODO: Need to be delete from here
   private scService: ContractService;
 
-  constructor(assetService?: AssetsService) {
+  constructor() {
     this.defineRoutes();
 
-    this.assetService = assetService;
+    // this.assetService = assetService;
     this.scService = new ContractService();
   }
 
   private defineRoutes() {
-    this.router.post(`${this.path}/create`, this.createAssets);
-    this.router.get(`${this.path}`, this.getAssets);
+    // this.router.post(`${this.path}/create`, this.createAssets);
+    // this.router.get(`${this.path}`, this.getAssets);
     this.router.post(`${this.path}/new`, auth, this.newAssets);
     this.router.get(`${this.path}/list`, auth, this.retrieveAssets);
     this.router.get(`${this.path}/contract/list`, this.retrieveOffers);
@@ -35,29 +33,29 @@ export default class AssetsController {
    * @param response
    * @param next
    */
-  private createAssets = async (
-    request: express.Request,
-    response: express.Response,
-    next: express.NextFunction
-  ) => {
-    const res = await this.assetService?.registerAsset();
-    const resp = "asset creato: " + res;
-    response.send(resp);
-  };
+  // private createAssets = async (
+  //   request: express.Request,
+  //   response: express.Response,
+  //   next: express.NextFunction
+  // ) => {
+  //   const res = await this.assetService?.registerAsset();
+  //   const resp = "asset creato: " + res;
+  //   response.send(resp);
+  // };
 
-  private getAssets = async (
-    request: express.Request,
-    response: express.Response,
-    next: express.NextFunction
-  ) => {
-    const res = await this.assetService?.getOwnedAssets();
+  // private getAssets = async (
+  //   request: express.Request,
+  //   response: express.Response,
+  //   next: express.NextFunction
+  // ) => {
+  //   const res = await this.assetService?.getOwnedAssets();
 
-    const respMap = res?.map((asset) => {
-      return asset.document.id;
-    });
+  //   const respMap = res?.map((asset) => {
+  //     return asset.document.id;
+  //   });
 
-    response.send(respMap);
-  };
+  //   response.send(respMap);
+  // };
 
   private newAssets = async (
     request: express.Request,
