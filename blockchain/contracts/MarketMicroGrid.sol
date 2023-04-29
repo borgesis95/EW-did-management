@@ -42,9 +42,12 @@ contract MarketMicroGridContract {
     mapping(address => Offer[]) public userOffers;
     mapping(address => Bid[]) public userBids;
 
+    mapping(address => uint256) public userPayment;
+
     /**Events */
     event OfferCreated(string message);
     event BidCreated(string message);
+    event TransferReceived(address sender, uint256 value);
 
     /**Functions */
     function createOffer(
@@ -114,5 +117,28 @@ contract MarketMicroGridContract {
 
     function getMatch() public view returns (Matching[] memory) {
         return matching;
+    }
+
+    // --- Payment ----
+
+    function createPaymentTransaction(
+        address _address,
+        uint256 _price
+    ) external {
+        if (userPayment[_address] != 0) {
+            userPayment[_address] = userPayment[_address] + _price;
+        } else {
+            userPayment[_address] = _price;
+        }
+    }
+
+    function getPaymentTransaction(
+        address _address
+    ) public view returns (uint) {
+        return userPayment[_address];
+    }
+
+    function pay() external payable {
+        emit TransferReceived(msg.sender, msg.value);
     }
 }

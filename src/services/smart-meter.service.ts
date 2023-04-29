@@ -69,7 +69,7 @@ export default class SmartMeterService {
   private generateValues = () => {
     const { min, max } = this.solarEnergyCurve();
     const produced = this.generateRandomInteger(min, max);
-    const consumed = this.generateRandomInteger(150, 250);
+    const consumed = this.generateRandomInteger(LOWER_BOUND_ENERGY, 180);
 
     return {
       produced,

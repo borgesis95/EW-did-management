@@ -2,7 +2,10 @@ import * as express from "express";
 import SmartMeterService from "../services/smart-meter.service";
 import ContractService from "../services/contract.service";
 import { EnergyData } from "../models/energy.model";
-import { EnergyMatchingDto } from "../@types/express/interface";
+import { EnergyMatchingDto, TransactionDto } from "../@types/express/interface";
+import APIresponse from "../response/response";
+import transactionModel from "../models/transaction.model";
+import { auth } from "../middleware/auth";
 
 interface ProsumerOffer {
   /** Define user which created offer  */
@@ -48,6 +51,7 @@ export default class GridController {
   public router = express.Router();
   public smartMeterService: SmartMeterService;
   public contractService: ContractService;
+  private transactionModel = transactionModel;
 
   constructor() {
     this.defineRoutes();
@@ -62,6 +66,8 @@ export default class GridController {
       `${this.path}/meter-simulation/:hours`,
       this.getSmartMetersSimulation
     );
+
+    this.router.get(`${this.path}/transactions`, auth, this.getTransactions);
   }
 
   private matchingAlgorithm = async (
@@ -69,40 +75,43 @@ export default class GridController {
     response: express.Response,
     next: express.NextFunction
   ) => {
-    const smartMetersMisurations =
-      await this.smartMeterService.retrieveUsersAndPush(true);
-    const offersList = await this.contractService.getAllOffers();
-    const bidsList = await this.contractService.getBids();
+    try {
+      const smartMetersMisurations =
+        await this.smartMeterService.retrieveUsersAndPush(true);
+      const offersList = await this.contractService.getAllOffers();
+      const bidsList = await this.contractService.getBids();
 
-    console.log("smart meter misuration:", smartMetersMisurations);
+      console.log("smart meter misuration:", smartMetersMisurations);
 
-    const prosumerCanSellEnergyList =
-      this.filterProsumersThatCanSellEnergyAndHasOffers(
+      const prosumerCanSellEnergyList =
+        this.filterProsumersThatCanSellEnergyAndHasOffers(
+          smartMetersMisurations,
+          offersList
+        );
+
+      const consumersWantEnergyList = this.filterConsumersWantBuyEnergyFromP2p(
         smartMetersMisurations,
-        offersList
+        bidsList
       );
 
-    // console.log("prosumer with offers", prosumerCanSellEnergyList);
+      const energyTransactionList = this.clearMarket(
+        consumersWantEnergyList,
+        prosumerCanSellEnergyList
+      );
 
-    const consumersWantEnergyList = this.filterConsumersWantBuyEnergyFromP2p(
-      smartMetersMisurations,
-      bidsList
-    );
-    // console.log("PROSUMER", prosumerCanSellEnergyList);
-    // console.log("consumer buyers", consumersWantEnergyList);
+      // this.contractService.addMatching(energyTransactionList);
 
-    const energyTransactionList = this.clearMarket(
-      consumersWantEnergyList,
-      prosumerCanSellEnergyList
-    );
+      const transactions = this.formatTransactions(energyTransactionList);
+      /**Add response to mongodb in order to get information to user about  what happen*/
+      await transactionModel.insertMany(transactions);
 
-    // energyTransactionList.forEach(async (match) => {
-    //   await this.contractService.addMatching(match);
-    // });
-
-    this.contractService.addMatching(energyTransactionList);
-
-    response.send(energyTransactionList);
+      response.send(energyTransactionList);
+    } catch (error) {
+      console.error(error);
+      response
+        .status(500)
+        .send(APIresponse.success({}, "something went wrong", 500));
+    }
   };
 
   private filterProsumersThatCanSellEnergyAndHasOffers = (
@@ -200,11 +209,11 @@ export default class GridController {
             offers[j].canSell = powerRemained;
 
             console.log(
-              `${demands[i].user} will buy ${totalEnergyTransfer} from ${offers[i].user} , power remained to sell : ${powerRemained}`
+              `${demands[i].user} will buy ${totalEnergyTransfer} from ${offers[j].user} , power remained to sell : ${powerRemained}`
             );
 
             energyExchangeList.push({
-              from: offers[i].user,
+              from: offers[j].user,
               to: demands[i].user,
               quantity: totalEnergyTransfer,
               price:
@@ -222,11 +231,11 @@ export default class GridController {
             demands[i].wantBuy = demands[i].wantBuy - totalEnergyTransfer;
 
             console.log(
-              `${demands[i].user} will buy ${totalEnergyTransfer} from ${offers[i].user} , power remained to buy : ${demands[i].wantBuy}`
+              `${demands[i].user} will buy ${totalEnergyTransfer} from ${offers[j].user} , power remained to buy : ${demands[i].wantBuy}`
             );
 
             energyExchangeList.push({
-              from: offers[i].user,
+              from: offers[j].user,
               to: demands[i].user,
               quantity: totalEnergyTransfer,
               price:
@@ -237,7 +246,6 @@ export default class GridController {
                   totalEnergyTransfer,
                   totalEnergyTransfer
                 ),
-              // price: totalEnergyTransfer * parseInt(offers[j].price),
             });
           }
         }
@@ -252,7 +260,10 @@ export default class GridController {
     res: express.Response,
     next: express.NextFunction
   ) => {
-    const match = await this.contractService.getMatch();
+    const match = await this.contractService.getTransactionMoneyByAddress(
+      "0x8D18c885db1138bC80A3f5E6343510bc93fB41A8"
+    );
+
     res.send(match);
   };
 
@@ -279,11 +290,6 @@ export default class GridController {
     energyBought: number,
     energyAvaiableFromProsumer: number
   ): number {
-    console.log("offer price:", offerPrice);
-    console.log("demand price", demandPrice);
-    console.log("energyBought", energyBought);
-    console.log("energyAvailableFromProsumer", energyAvaiableFromProsumer);
-
     const rateEnergyBuyed = (energyBought / energyAvaiableFromProsumer) * 100;
 
     const discount = this.calcDiscount(rateEnergyBuyed);
@@ -306,4 +312,61 @@ export default class GridController {
 
     return discount;
   }
+
+  /**This method handled transaction in order to save information */
+  private formatTransactions = (energyTransactionList: EnergyMatchingDto[]) => {
+    let prosumer: Record<string, TransactionDto> = {};
+    let consumer: Record<string, TransactionDto> = {};
+
+    const transactionDate = new Date();
+
+    energyTransactionList?.forEach((item) => {
+      prosumer[item.from] = {
+        quantity: item.quantity,
+        date: transactionDate.toString(),
+        price: (prosumer[item.from]?.price || 0) + item.price,
+      };
+      consumer[item.to] = {
+        quantity: item.quantity,
+        date: transactionDate.toString(),
+        price: (consumer[item.to]?.price || 0) - item.price,
+      };
+
+      return {
+        to: item.to,
+      };
+    });
+
+    const pros = Object.entries(prosumer).map(([address, item]) => {
+      return {
+        address: address,
+        ...item,
+      };
+    });
+
+    const cons = Object.entries(consumer).map(([address, item]) => {
+      return {
+        address: address,
+        ...item,
+      };
+    });
+
+    const result = [...pros, ...cons];
+
+    return result;
+  };
+
+  private getTransactions = async (
+    request: express.Request,
+    response: express.Response,
+    next: express.NextFunction
+  ) => {
+    const address = response.locals.user;
+
+    const res = await transactionModel.find({
+      address: address,
+    });
+
+    response.send(APIresponse.success(res));
+  };
 }

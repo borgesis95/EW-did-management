@@ -6,7 +6,7 @@ export default class ContractService {
   private provider;
   private web3;
   private microGridSmartContract;
-  private smartContractAddress = "0x36d6118d7943E4a66eB29D51558F8003b5DeEf2c";
+  private smartContractAddress = "0x9C2a983454F69fD9d50c4e1f2DEf43cAD0D60B6c";
 
   constructor() {
     const privateKey = process.env.PRIVATE_KEY || "";
@@ -33,15 +33,26 @@ export default class ContractService {
     return values;
   };
 
-  public getMatch = async () => {
-    const values = await this.microGridSmartContract.methods.getMatch().call();
+  public getTransactionMoneyByAddress = async (address: string) => {
+    const values = await this.microGridSmartContract.methods
+      .getPaymentTransaction(address)
+      .call();
     return values;
   };
 
-  public addMatching = async (matching: EnergyMatchingDto[]) => {
-    console.log("ADD");
+  public addTransactionPayment = async (address: string, price: number) => {
     const accounts = await this.web3.eth.getAccounts();
-    console.log("account:", accounts);
+    try {
+      await this.microGridSmartContract.methods
+        .createPaymentTransaction(address, price)
+        .send({ from: accounts[0] });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  public addMatching = async (matching: EnergyMatchingDto[]) => {
+    const accounts = await this.web3.eth.getAccounts();
     try {
       await this.microGridSmartContract.methods
         .createMatch(matching)

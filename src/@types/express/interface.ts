@@ -4,3 +4,10 @@ export interface EnergyMatchingDto {
   price: number;
   quantity: number;
 }
+
+export interface TransactionDto {
+  address?: string;
+  quantity: number;
+  price: number;
+  date: string;
+}
