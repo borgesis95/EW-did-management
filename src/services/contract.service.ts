@@ -6,7 +6,7 @@ export default class ContractService {
   private provider;
   private web3;
   private microGridSmartContract;
-  private smartContractAddress = "0x9C2a983454F69fD9d50c4e1f2DEf43cAD0D60B6c";
+  private smartContractAddress = "0xdA3e4092B6329D2A2a49338eFDA4A23ee158dC9d";
 
   constructor() {
     const privateKey = process.env.PRIVATE_KEY || "";

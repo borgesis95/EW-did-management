@@ -99,11 +99,18 @@ export default class GridController {
         prosumerCanSellEnergyList
       );
 
-      // this.contractService.addMatching(energyTransactionList);
-
       const transactions = this.formatTransactions(energyTransactionList);
       /**Add response to mongodb in order to get information to user about  what happen*/
       await transactionModel.insertMany(transactions);
+
+      /**Save transaction on BC */
+
+      transactions.forEach(async (it) => {
+        await this.contractService.addTransactionPayment(
+          it.address,
+          parseInt(it.price.toFixed(2))
+        );
+      });
 
       response.send(energyTransactionList);
     } catch (error) {
@@ -336,6 +343,9 @@ export default class GridController {
         to: item.to,
       };
     });
+
+    console.log("prosumer", prosumer);
+    console.log("consumer", consumer);
 
     const pros = Object.entries(prosumer).map(([address, item]) => {
       return {

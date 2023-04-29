@@ -18,36 +18,19 @@ contract MarketMicroGridContract {
         uint creationDate;
     }
 
-    struct SmartMisuration {
-        address user;
-        /* Define energy that has been generated from user */
-        uint128 generated;
-        /** Define energy that has been consumed from user in time range (es. each 15min ) */
-        uint128 consumed;
-    }
-
-    struct Matching {
-        address from;
-        address to;
-        uint256 price;
-        uint256 quantity;
-    }
-
     Offer[] public offers;
     Bid[] public bids;
-    SmartMisuration[] public misuration;
-    Matching[] public matching;
-    Matching public matchTest;
 
     mapping(address => Offer[]) public userOffers;
     mapping(address => Bid[]) public userBids;
 
-    mapping(address => uint256) public userPayment;
+    mapping(address => int) public userPayment;
 
     /**Events */
     event OfferCreated(string message);
     event BidCreated(string message);
     event TransferReceived(address sender, uint256 value);
+    event MoneyReceived(address sender, string message);
 
     /**Functions */
     function createOffer(
@@ -74,14 +57,6 @@ contract MarketMicroGridContract {
         emit BidCreated("Bid created");
     }
 
-    function addMisuration(
-        address _address,
-        uint128 _produced,
-        uint128 _consumed
-    ) external {
-        misuration.push(SmartMisuration(_address, _produced, _consumed));
-    }
-
     function getOffers() public view returns (Offer[] memory) {
         return offers;
     }
@@ -102,29 +77,9 @@ contract MarketMicroGridContract {
         return bids;
     }
 
-    function createMatch(Matching[] memory _matchingList) external {
-        for (uint i = 0; i < _matchingList.length; i++) {
-            matching.push(
-                Matching(
-                    _matchingList[i].from,
-                    _matchingList[i].to,
-                    _matchingList[i].price,
-                    _matchingList[i].quantity
-                )
-            );
-        }
-    }
-
-    function getMatch() public view returns (Matching[] memory) {
-        return matching;
-    }
-
     // --- Payment ----
 
-    function createPaymentTransaction(
-        address _address,
-        uint256 _price
-    ) external {
+    function createPaymentTransaction(address _address, int _price) external {
         if (userPayment[_address] != 0) {
             userPayment[_address] = userPayment[_address] + _price;
         } else {
@@ -132,13 +87,22 @@ contract MarketMicroGridContract {
         }
     }
 
-    function getPaymentTransaction(
-        address _address
-    ) public view returns (uint) {
+    function getPaymentTransaction(address _address) public view returns (int) {
         return userPayment[_address];
     }
 
     function pay() external payable {
+        userPayment[msg.sender] = userPayment[msg.sender] - int(msg.value);
         emit TransferReceived(msg.sender, msg.value);
+    }
+
+    function withDrawMoney(address payable _address, uint _price) public {
+        require(address(this).balance > _price, "Money not available");
+        _address.transfer(address(this).balance);
+        emit MoneyReceived(msg.sender, "money has been received");
+    }
+
+    function getContractBalance() public view returns (uint) {
+        return address(this).balance;
     }
 }
