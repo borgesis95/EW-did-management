@@ -2,10 +2,16 @@ import * as express from "express";
 import SmartMeterService from "../services/smart-meter.service";
 import ContractService from "../services/contract.service";
 import { EnergyData } from "../models/energy.model";
-import { EnergyMatchingDto, TransactionDto } from "../@types/express/interface";
+import {
+  EnergyMatchingDto,
+  MarketDto,
+  TransactionDto,
+} from "../@types/express/interface";
 import APIresponse from "../response/response";
 import transactionModel from "../models/transaction.model";
 import { auth } from "../middleware/auth";
+import OfferModel from "../models/offers.model";
+import DemandsModel from "../models/demands.model";
 
 interface ProsumerOffer {
   /** Define user which created offer  */
@@ -52,6 +58,8 @@ export default class GridController {
   public smartMeterService: SmartMeterService;
   public contractService: ContractService;
   private transactionModel = transactionModel;
+  private offerModel = OfferModel;
+  private demandsModel = DemandsModel;
 
   constructor() {
     this.defineRoutes();
@@ -62,12 +70,15 @@ export default class GridController {
   private defineRoutes() {
     this.router.get(`${this.path}/matching`, this.matchingAlgorithm);
     this.router.get(`${this.path}/list`, this.getMatch);
+    this.router.get(`${this.path}/average`, this.getAveragePriceOffer);
     this.router.get(
       `${this.path}/meter-simulation/:hours`,
       this.getSmartMetersSimulation
     );
 
     this.router.get(`${this.path}/transactions`, auth, this.getTransactions);
+    this.router.post(`${this.path}/offer`, this.createOffer);
+    this.router.post(`${this.path}/bid`, this.createBid);
   }
 
   private matchingAlgorithm = async (
@@ -378,5 +389,71 @@ export default class GridController {
     });
 
     response.send(APIresponse.success(res));
+  };
+
+  private getAveragePriceOffer = async (
+    request: express.Request,
+    response: express.Response
+  ) => {
+    const offers = await this.offerModel.find({});
+    const bids = await this.demandsModel.find({});
+
+    const initialOfferValue = 0;
+    let averageOffersPrice = offers.reduce(
+      (accumulator: number, item: any) => accumulator + parseInt(item.price),
+      initialOfferValue
+    );
+
+    averageOffersPrice = averageOffersPrice / offers.length;
+
+    let averageBidsPrice = bids.reduce(
+      (accumulator: number, item: any) => accumulator + parseInt(item.price),
+      initialOfferValue
+    );
+
+    averageBidsPrice = averageBidsPrice / offers.length;
+
+    response.send(
+      APIresponse.success({
+        bids: averageBidsPrice,
+        offers: averageOffersPrice,
+      })
+    );
+  };
+
+  private createOffer = async (req: express.Request, res: express.Response) => {
+    const request: MarketDto = req.body;
+
+    let options = { upsert: true, new: true, setDefaultsOnInsert: true };
+
+    const response = await this.offerModel.findOneAndUpdate(
+      { address: request.address },
+      request,
+      options
+    );
+
+    res.send(
+      APIresponse.success({
+        response,
+      })
+    );
+  };
+
+  private createBid = async (req: express.Request, res: express.Response) => {
+    const request: MarketDto = req.body;
+
+    let options = { upsert: true, new: true, setDefaultsOnInsert: true };
+
+    const response = await this.demandsModel.findOneAndUpdate(
+      { address: request.address },
+      request,
+      options
+    );
+
+    res.send(
+      APIresponse.success({
+        response,
+      })
+    );
   };
 }

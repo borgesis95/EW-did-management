@@ -87,19 +87,32 @@ contract MarketMicroGridContract {
         }
     }
 
+    /**
+        This method is just to faciliate development
+    */
+    function resetPayment(address _address) external {
+        userPayment[_address] = 0;
+    }
+
     function getPaymentTransaction(address _address) public view returns (int) {
         return userPayment[_address];
     }
 
-    function pay() external payable {
-        userPayment[msg.sender] = userPayment[msg.sender] - int(msg.value);
+    function pay(int price) external payable {
+        userPayment[msg.sender] = userPayment[msg.sender] + price;
         emit TransferReceived(msg.sender, msg.value);
     }
 
-    function withDrawMoney(address payable _address, uint _price) public {
-        require(address(this).balance > _price, "Money not available");
-        _address.transfer(address(this).balance);
-        emit MoneyReceived(msg.sender, "money has been received");
+    function withDrawMoney(
+        address payable _address,
+        int _price,
+        uint _wei
+    ) public {
+        require(address(this).balance > _wei, "Money not available");
+
+        userPayment[msg.sender] = userPayment[msg.sender] - _price;
+        _address.transfer(_wei);
+        emit MoneyReceived(msg.sender, "moneys has been received");
     }
 
     function getContractBalance() public view returns (uint) {

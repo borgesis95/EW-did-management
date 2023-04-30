@@ -6,7 +6,7 @@ export default class ContractService {
   private provider;
   private web3;
   private microGridSmartContract;
-  private smartContractAddress = "0xdA3e4092B6329D2A2a49338eFDA4A23ee158dC9d";
+  private smartContractAddress = "0x4B55a3E6592B568737903ff134e534fa18160cEB";
 
   constructor() {
     const privateKey = process.env.PRIVATE_KEY || "";
@@ -33,6 +33,16 @@ export default class ContractService {
     return values;
   };
 
+  public getBalance = async () => {
+    const values = await this.microGridSmartContract.methods
+      .getContractBalance()
+      .call();
+
+    const eurValue =
+      parseFloat(this.web3.utils.fromWei(values, "ether")) / 0.00058;
+    return { eurValue, weiValue: values };
+  };
+
   public getTransactionMoneyByAddress = async (address: string) => {
     const values = await this.microGridSmartContract.methods
       .getPaymentTransaction(address)
@@ -56,6 +66,28 @@ export default class ContractService {
     try {
       await this.microGridSmartContract.methods
         .createMatch(matching)
+        .send({ from: accounts[0] });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  public createOffer = async (account: string, price: number) => {
+    try {
+      const accounts = await this.web3.eth.getAccounts();
+      await this.microGridSmartContract.methods
+        .createOffer(account, price, Date.now())
+        .send({ from: accounts[0] });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  public createBids = async (account: string, price: number) => {
+    try {
+      const accounts = await this.web3.eth.getAccounts();
+      await this.microGridSmartContract.methods
+        .createBid(account, price, Date.now())
         .send({ from: accounts[0] });
     } catch (error) {
       console.error(error);

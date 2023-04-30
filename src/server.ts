@@ -11,6 +11,7 @@ import AssetsController from "./controller/assets.controller";
 import { config, VOLTA_CHAIN_ID } from "./config/config";
 import UserController from "./controller/users.controller";
 import GridController from "./controller/grid.controller";
+import ContractController from "./controller/contract.controller";
 
 dotenv.config();
 
@@ -45,7 +46,12 @@ dotenv.config();
 const port = parseInt(process.env.PORT || "3000");
 
 const app = new App(
-  [new AssetsController(), new UserController(), new GridController()],
+  [
+    new AssetsController(),
+    new UserController(),
+    new GridController(),
+    new ContractController(),
+  ],
   port
 );
 

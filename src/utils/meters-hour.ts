@@ -48,10 +48,8 @@ export const solarCurveValues: solarCurveDto[] = [
   {
     from: 15,
     to: 18,
-    min: 100,
-    max: 200,
-    // min: 150,
-    // max: 250,
+    min: 150,
+    max: 250,
   },
   {
     from: 18,
