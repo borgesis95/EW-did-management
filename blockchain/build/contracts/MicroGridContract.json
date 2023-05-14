@@ -11078,12 +11078,12 @@
     "1337": {
       "events": {},
       "links": {},
-      "address": "0xCb5930489014f91011002765987442c8334D3449",
-      "transactionHash": "0x63e14ae0f8765e50c2c7591a4e9a1fb98c5ecf91f4fd0354d46bf2ed7870ffe4"
+      "address": "0x4a251054f870f3e62248296ea1C5470167004706",
+      "transactionHash": "0x2b7c656b5f250e988629d83eafbe53d03878f5d728d2253c67db91464b78b53c"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-30T13:17:07.029Z",
+  "updatedAt": "2023-05-05T14:09:58.147Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

@@ -112,7 +112,7 @@ contract MarketMicroGridContract {
 
         userPayment[msg.sender] = userPayment[msg.sender] - _price;
         _address.transfer(_wei);
-        emit MoneyReceived(msg.sender, "moneys has been received");
+        emit MoneyReceived(msg.sender, "money has been received");
     }
 
     function getContractBalance() public view returns (uint) {

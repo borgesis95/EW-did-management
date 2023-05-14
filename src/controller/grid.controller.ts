@@ -12,6 +12,7 @@ import transactionModel from "../models/transaction.model";
 import { auth } from "../middleware/auth";
 import OfferModel from "../models/offers.model";
 import DemandsModel from "../models/demands.model";
+import AssetsService from "../services/assets.service";
 
 interface ProsumerOffer {
   /** Define user which created offer  */
@@ -57,6 +58,7 @@ export default class GridController {
   public router = express.Router();
   public smartMeterService: SmartMeterService;
   public contractService: ContractService;
+  public assetService: AssetsService;
   private transactionModel = transactionModel;
   private offerModel = OfferModel;
   private demandsModel = DemandsModel;
@@ -65,6 +67,7 @@ export default class GridController {
     this.defineRoutes();
     this.smartMeterService = new SmartMeterService("");
     this.contractService = new ContractService();
+    this.assetService = new AssetsService();
   }
 
   private defineRoutes() {
@@ -93,6 +96,12 @@ export default class GridController {
       const bidsList = await this.contractService.getBids();
 
       console.log("smart meter misuration:", smartMetersMisurations);
+
+      //TODO: Da implementare
+      smartMetersMisurations.forEach((misuration) => {
+        misuration.diff > 0 &&
+          this.assetService.loadBattery(misuration.user_id, misuration.diff);
+      });
 
       const prosumerCanSellEnergyList =
         this.filterProsumersThatCanSellEnergyAndHasOffers(
@@ -123,7 +132,7 @@ export default class GridController {
         );
       });
 
-      response.send(energyTransactionList);
+      response.send(transactions);
     } catch (error) {
       console.error(error);
       response
@@ -321,11 +330,11 @@ export default class GridController {
     // Between 0 and 30 there isn't discount
     let discount = 0;
     if (rateEnergyBuyed > 30 && rateEnergyBuyed <= 60) {
-      discount = 5;
+      discount = 2;
     } else if (rateEnergyBuyed > 60 && rateEnergyBuyed <= 90) {
-      discount = 10;
+      discount = 4;
     } else if (rateEnergyBuyed > 90) {
-      discount = 20;
+      discount = 6;
     }
 
     return discount;
