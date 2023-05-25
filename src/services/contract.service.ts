@@ -53,7 +53,7 @@ export default class ContractService {
   public addTransactionPayment = async (address: string, price: number) => {
     const accounts = await this.web3.eth.getAccounts();
     try {
-      await this.microGridSmartContract.methods
+      const response = await this.microGridSmartContract.methods
         .createPaymentTransaction(address, price)
         .send({ from: accounts[0] });
     } catch (error) {

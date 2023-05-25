@@ -7,6 +7,8 @@ import MatchingService from "./matching.service";
  */
 const hours = [2, 4, 7, 11, 14, 17, 20, 23];
 
+// const hours = [17, 20, 23];
+
 export default class SimulationService {
   private matchingService: MatchingService;
 
@@ -14,40 +16,64 @@ export default class SimulationService {
     this.matchingService = new MatchingService();
   }
   public async runSimulation() {
-    console.log("RUN SIMULATION AND RESULT");
-
     const dateList: Date[] = [];
 
-    hours.forEach((hour) => {
-      const date = new Date();
-      date.setHours(hour);
-      date.setMinutes(0);
-      dateList.push(date);
-    });
+    const quantitaDaVendereTotale = [];
+    const quantitaVendutaTotale = [];
 
-    let res: Record<string, any> = {};
+    const general: Record<string, any> = {};
+    let response = [];
+    for (let i = 0; i < 2; i++) {
+      hours.forEach((hour) => {
+        const date = new Date();
+        date.setHours(hour);
+        date.setMinutes(0);
+        date.setSeconds(0);
+        dateList.push(date);
+      });
 
-    for (const date of dateList) {
-      const transaction_result = await this.matchingService.matching(date);
+      let res: Record<string, any> = {};
 
-      let totalProduced = transaction_result.smartMetersMisurations.reduce(
-        (accumulator: number, item) => accumulator + item.produced,
+      for (const date of dateList) {
+        const transaction_result = await this.matchingService.matching(date);
+
+        // Racchiude la produzione di energia
+        const quantitaDaVendere = transaction_result.smartMetersMisurations
+          .filter((item) => item.diff > 0)
+          .reduce((acc: number, item) => acc + item.diff, 0);
+
+        let quantitaVenduta = transaction_result.energyExchangeList.reduce(
+          (acc: number, item) => acc + item.quantity,
+          0
+        );
+
+        quantitaDaVendereTotale.push(quantitaDaVendere);
+        quantitaVendutaTotale.push(quantitaVenduta);
+
+        res[date.toLocaleString()] = {
+          // misuration: transaction_result.smartMetersMisurations,
+          // transaction: transaction_result.transactions,
+          numeroTransazioni: transaction_result.transactions.length,
+          quantitaVenduta: quantitaVenduta,
+          quantitaDaVendere: quantitaDaVendere,
+          offerte: transaction_result.offersByLowestPrice,
+          percentualeEnergiaVenduta:
+            (quantitaVenduta / quantitaDaVendere) * 100,
+        };
+      }
+
+      res.quantitaVendutaTotale = quantitaVendutaTotale.reduce(
+        (acc: number, item) => acc + item,
+        0
+      );
+      res.quantitaDaVendereTotale = quantitaDaVendereTotale.reduce(
+        (acc: number, item) => acc + item,
         0
       );
 
-      let totalConsumed = transaction_result.smartMetersMisurations.reduce(
-        (accumulator: number, item) => accumulator + item.consumed,
-        0
-      );
-      res[date.toLocaleString()] = {
-        misuration: transaction_result.smartMetersMisurations,
-        produced: totalProduced,
-        consumed: totalConsumed,
-        diff: totalProduced - totalConsumed,
-        transaction: transaction_result.transactions,
-      };
+      response.push(res);
     }
 
-    return res;
+    return response;
   }
 }

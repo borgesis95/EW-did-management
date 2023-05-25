@@ -1,5 +1,6 @@
 import * as express from "express";
 import SimulationService from "../services/simulation.service";
+import APIresponse from "../response/response";
 
 export default class SimulationController {
   public path = "/simulation";
@@ -15,11 +16,11 @@ export default class SimulationController {
     this.router.get(`${this.path}/run`, this.runSimulation);
   }
 
-  private runSimulation = (
+  private runSimulation = async (
     request: express.Request,
     response: express.Response
   ) => {
-    this.simulationService.runSimulation();
-    response.send("Simulazione lanciata");
+    const result = await this.simulationService.runSimulation();
+    response.send(APIresponse.success(result));
   };
 }

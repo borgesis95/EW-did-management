@@ -18,19 +18,22 @@ export default class SmartMeterService {
 
   public run() {
     schedule.scheduleJob(this.scheduleTime, () => {
-      this.retrieveUsersAndPush();
+      this.retrieveUsersAndCreateSimulatedValues();
     });
   }
 
   /**For each user create new istance of simulated smart meter and push into DBb*/
-  public retrieveUsersAndPush = async (isTest = false) => {
+  public retrieveUsersAndCreateSimulatedValues = async (
+    isTest = false,
+    custom_date?: Date
+  ) => {
     const users = await this.user.find();
-    const reading_date = new Date();
+    const reading_date = custom_date ? custom_date : new Date();
 
     const result: EnergyData[] = [];
 
     users.map((user) => {
-      const res = this.generateValues();
+      const res = this.generateValues(reading_date);
 
       const value: EnergyData = {
         user_id: user.address,
@@ -49,8 +52,8 @@ export default class SmartMeterService {
   /**
    * Goal of this function is create an accurate simulation of energy produced according the day's hour
    */
-  public solarEnergyCurve = () => {
-    const hour = new Date().getHours();
+  public solarEnergyCurve = (date: Date) => {
+    const hour = date.getHours();
     let min = 0;
     let max = 0;
     solarCurveValues.every((item) => {
@@ -66,10 +69,11 @@ export default class SmartMeterService {
     return { min, max };
   };
 
-  private generateValues = () => {
-    const { min, max } = this.solarEnergyCurve();
-    const produced = this.generateRandomInteger(100, 200);
-    const consumed = this.generateRandomInteger(LOWER_BOUND_ENERGY, 180);
+  private generateValues = (date: Date) => {
+    const { min, max } = this.solarEnergyCurve(date);
+
+    const produced = this.generateRandomInteger(min, max);
+    const consumed = this.generateRandomInteger(100, 300);
 
     return {
       produced,

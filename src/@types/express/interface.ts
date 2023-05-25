@@ -17,3 +17,17 @@ export interface MarketDto {
   price: number;
   date: string;
 }
+
+export interface ProsumerOffer {
+  /** Define user which created offer  */
+  user: string;
+  /* Describe how much energy can sell to other consumers */
+  canSell: number;
+  price: string;
+}
+
+export interface ConsumerBid {
+  user: string;
+  wantBuy: number;
+  price: string;
+}
